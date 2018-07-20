@@ -1,0 +1,113 @@
+<Type Name="FolderIdType" FullName="ExchangeWebServices.FolderIdType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="3c12cd801d975431c647dcf7cc363ddbb3f5f23c" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20612075" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class FolderIdType : ExchangeWebServices.BaseFolderIdType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FolderIdType extends ExchangeWebServices.BaseFolderIdType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.FolderIdType" />
+  <TypeSignature Language="VB.NET" Value="Public Class FolderIdType&#xA;Inherits BaseFolderIdType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FolderIdType : ExchangeWebServices::BaseFolderIdType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseFolderIdType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>El <see cref="T:ExchangeWebServices.FolderIdType" /> clase identifica una carpeta.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FolderIdType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.FolderIdType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FolderIdType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>El <see cref="T:ExchangeWebServices.FolderIdType" /> constructor inicializa una nueva instancia de la <see cref="T:ExchangeWebServices.FolderIdType" /> clase.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeKey">
+      <MemberSignature Language="C#" Value="public string ChangeKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ChangeKey" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FolderIdType.ChangeKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChangeKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChangeKey { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.FolderIdType.ChangeKey" /> (propiedad) Obtiene o establece la clave de cambio de una carpeta. Esta propiedad puede ser necesaria según el contexto en el que el <see cref="T:ExchangeWebServices.FolderIdType" /> se usa el objeto. Esto es una propiedad de lectura y escritura.</summary>
+        <value>El <see cref="P:ExchangeWebServices.FolderIdType.ChangeKey" /> (propiedad) devuelve un valor de tipo string que representa la clave de cambio de una carpeta.</value>
+        <remarks>
+          <para>Esta propiedad no es necesaria cuando se va a eliminar una carpeta. Esta propiedad puede cambiar de una carpeta cuando se ha realizado una actualización en la carpeta.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FolderIdType.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.FolderIdType.Id" /> (propiedad) Obtiene o establece el identificador de una carpeta. Esta propiedad es obligatoria. Esto es una propiedad de lectura y escritura.</summary>
+        <value>El <see cref="P:ExchangeWebServices.FolderIdType.Id" /> (propiedad) devuelve un valor de tipo string que representa el identificador de una carpeta.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

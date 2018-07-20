@@ -1,0 +1,189 @@
+<Type Name="CreateFolderType" FullName="ExchangeWebServices.CreateFolderType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="1cde7d25d8f85353016d92b6935692b2f2d8b4e2" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20612115" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class CreateFolderType : ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CreateFolderType extends ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.CreateFolderType" />
+  <TypeSignature Language="VB.NET" Value="Public Class CreateFolderType&#xA;Inherits BaseRequestType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CreateFolderType : ExchangeWebServices::BaseRequestType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseRequestType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>El <see cref="T:ExchangeWebServices.CreateFolderType" /> clase representa una solicitud para crear una carpeta.</summary>
+    <remarks>
+      <para>El <see cref="T:ExchangeWebServices.CreateFolderType" /> clase se usa para crear las carpetas de tareas, las carpetas de búsqueda, las carpetas de contactos, las carpetas de calendario y las carpetas normales. Las carpetas nuevas se pueden extender mediante el uso de la <see cref="P:ExchangeWebServices.BaseFolderType.ExtendedProperty" /> (propiedad).</para>
+      <para>
+        <b>Nota</b>: CreateFolderType la clase no agregue las carpetas administradas a un buzón de correo. Para obtener información acerca de cómo agregar las carpetas administradas a un buzón de correo, consulte <see cref="T:ExchangeWebServices.CreateManagedFolderRequestType" />, CreateManagedFolder operación y adición de carpetas administradas. Para obtener un ejemplo que muestra cómo implementar las carpetas administradas, vea <a href="http://go.microsoft.com/fwlink/?LinkID=82742">Ejemplo Selector de carpeta administrada</a></para>
+      <para />
+    </remarks>
+    <example>
+      <para>En el ejemplo siguiente se muestra cómo crear un conjunto de carpetas en la Bandeja de entrada. En el ejemplo se crea una carpeta normal, una carpeta de contactos y una carpeta de tareas.</para>
+      <code>static void CreateFolder(ExchangeServiceBinding esb)
+{
+    // Identify the folders to create.
+    FolderType folder1 = new FolderType();
+    ContactsFolderType folder2 = new ContactsFolderType();
+    TasksFolderType folder3 = new TasksFolderType();
+    folder1.DisplayName = "MyNewRegularFolder";
+    folder2.DisplayName = "MyNewContactsFolder";
+    folder3.DisplayName = "MyNewTasksFolder";
+
+    // Identify where the new folders are created.
+    DistinguishedFolderIdType distFolder = new DistinguishedFolderIdType();
+    distFolder.Id = DistinguishedFolderIdNameType.inbox;
+    TargetFolderIdType targetID = new TargetFolderIdType();
+    targetID.Item = distFolder;
+
+    // Create the request.
+    CreateFolderType &lt;span class="label"&gt;createFolder&lt;/span&gt; = new CreateFolderType();
+    &lt;span class="label"&gt;createFolder&lt;/span&gt;.Folders = new BaseFolderType[] { folder1, folder2, folder3 };
+    &lt;span class="label"&gt;createFolder&lt;/span&gt;.ParentFolderId = targetID;
+
+    try
+    {
+        // Send the request and get the response.
+        CreateFolderResponseType response = esb.CreateFolder(&lt;span class="label"&gt;createFolder&lt;/span&gt;);
+
+        // Get the response messages.
+        ResponseMessageType[] rmta = response.ResponseMessages.Items;
+
+        foreach (ResponseMessageType responseMessage in rmta)
+        {
+            // Perform error checks in production code.
+            FolderInfoResponseMessageType firmt = (responseMessage as FolderInfoResponseMessageType);
+            BaseFolderType[] folders = firmt.Folders;
+
+            foreach (BaseFolderType folder in folders)
+            {
+                if (folder is TasksFolderType)
+                {
+                    TasksFolderType tft = (folder as TasksFolderType);
+                    //TODO: Handle the task folder.
+                }
+
+                else if (folder is CalendarFolderType)
+                {
+                    CalendarFolderType cft = (folder as CalendarFolderType);
+                    // TODO: Handle the calendar folder.
+                }
+
+                else
+                {
+                    //TODO: Handle the SearchFolderType, ContactsFolderType, and FolderType folders.
+                }
+            }
+        }
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+    }
+}</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CreateFolderType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.CreateFolderType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CreateFolderType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>El <see cref="T:ExchangeWebServices.CreateFolderType" /> constructor inicializa una nueva instancia de la <see cref="T:ExchangeWebServices.CreateFolderType" /> clase.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Folders">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BaseFolderType[] Folders { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BaseFolderType[] Folders" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CreateFolderType.Folders" />
+      <MemberSignature Language="VB.NET" Value="Public Property Folders As BaseFolderType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::BaseFolderType ^&gt; ^ Folders { cli::array &lt;ExchangeWebServices::BaseFolderType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::BaseFolderType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("ContactsFolder", typeof(ExchangeWebServices.ContactsFolderType), IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("CalendarFolder", typeof(ExchangeWebServices.CalendarFolderType), IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("TasksFolder", typeof(ExchangeWebServices.TasksFolderType), IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Folder", typeof(ExchangeWebServices.FolderType), IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("SearchFolder", typeof(ExchangeWebServices.SearchFolderType), IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BaseFolderType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.CreateFolderType.Folders" /> (propiedad) Obtiene o establece un conjunto de carpetas para crear en una base de datos de Exchange. Esta propiedad obtiene o establece un conjunto de <see cref="T:ExchangeWebServices.FolderType" />, <see cref="T:ExchangeWebServices.CalendarFolderType" />, <see cref="T:ExchangeWebServices.ContactsFolderType" />, <see cref="T:ExchangeWebServices.SearchFolderType" />, o <see cref="T:ExchangeWebServices.TasksFolderType" /> objetos. Esta propiedad es obligatoria. Esto es una propiedad de lectura y escritura.</summary>
+        <value>El <see cref="P:ExchangeWebServices.CreateFolderType.Folders" /> (propiedad) devuelve un <see cref="T:ExchangeWebServices.BaseFolderType" /> matriz que contiene todas las carpetas para crear.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentFolderId">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.TargetFolderIdType ParentFolderId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.TargetFolderIdType ParentFolderId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CreateFolderType.ParentFolderId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParentFolderId As TargetFolderIdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::TargetFolderIdType ^ ParentFolderId { ExchangeWebServices::TargetFolderIdType ^ get(); void set(ExchangeWebServices::TargetFolderIdType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.TargetFolderIdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.CreateFolderType.ParentFolderId" /> (propiedad) Obtiene o establece el identificador de la carpeta que contendrá las carpetas recién creadas. Esta propiedad se obtiene o establece un <see cref="T:ExchangeWebServices.TargetFolderIdType" />, que puede ser un <see cref="T:ExchangeWebServices.FolderIdType" /> o <see cref="T:ExchangeWebServices.DistinguishedFolderIdType" /> objeto. Esta propiedad es obligatoria. Esto es una propiedad de lectura y escritura.</summary>
+        <value>La propiedad <see cref="P:ExchangeWebServices.CreateFolderType.ParentFolderId" /> devuelve un objeto <see cref="T:ExchangeWebServices.TargetFolderIdType" />.</value>
+        <remarks>
+          <para>El <see cref="T:ExchangeWebServices.FolderIdType" /> y <see cref="T:ExchangeWebServices.DistinguishedFolderIdType" /> clases extienden el <see cref="T:ExchangeWebServices.TargetFolderIdType" /> clase.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

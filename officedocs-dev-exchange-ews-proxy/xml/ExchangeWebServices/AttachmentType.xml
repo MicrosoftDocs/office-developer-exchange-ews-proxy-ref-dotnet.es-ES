@@ -1,0 +1,418 @@
+<Type Name="AttachmentType" FullName="ExchangeWebServices.AttachmentType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="220b0e38b807f99ffe7a413769ebc0b7095779f2" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20612734" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class AttachmentType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit AttachmentType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.AttachmentType" />
+  <TypeSignature Language="VB.NET" Value="Public Class AttachmentType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AttachmentType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.FileAttachmentType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.ItemAttachmentType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>El <see cref="T:ExchangeWebServices.AttachmentType" /> clase representa un dato adjunto.</summary>
+    <remarks>
+      <para>El <see cref="T:ExchangeWebServices.AttachmentType" /> clase puede representar un archivo o un elemento de los datos adjuntos. El <see cref="T:ExchangeWebServices.AttachmentType" /> clase es el tipo base para la <see cref="T:ExchangeWebServices.FileAttachmentType" /> y el <see cref="T:ExchangeWebServices.ItemAttachmentType" /> clases.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>En el ejemplo siguiente se muestra el uso de la <see cref="T:ExchangeWebServices.FileAttachmentType" /> y el <see cref="T:ExchangeWebServices.ItemAttachmentType" />. Estos dos tipos se derivan de la <see cref="T:ExchangeWebServices.AttachmentType" /> clase. Estos dos tipos se agregan a la <see cref="P:ExchangeWebServices.CreateAttachmentType.Attachments" /> (propiedad) de la <see cref="T:ExchangeWebServices.CreateAttachmentType" /> clase. En este ejemplo también muestra el uso de la <see cref="T:ExchangeWebServices.AttachmentType" /> en el <see cref="T:ExchangeWebServices.AttachmentInfoResponseMessageType" /> objeto.</para>
+      <code>static void CreateAttachment(ExchangeServiceBinding esb)
+{
+    // Create item attachment.
+    MessageType message = new MessageType();
+    message.Subject = "Example subject";
+    message.Importance = ImportanceChoicesType.Low;
+    message.ImportanceSpecified = true;
+
+    ItemAttachmentType itemAttach = new ItemAttachmentType();
+    itemAttach.Name = "Message Attachment Example";
+    itemAttach.Item = message;
+
+    // Create file attachment.
+    FileAttachmentType fileAttach = new FileAttachmentType();
+    fileAttach.Name = "filename.txt";
+    fileAttach.ContentType = "text/plain";
+
+    byte[] content;
+    using (FileStream fileStream = new FileStream("C:\\cas.txt",
+        FileMode.Open, FileAccess.Read))
+    {
+        content = new byte[fileStream.Length];
+        fileStream.Read(content, 0, content.Length);
+    }
+
+    fileAttach.Content = content;
+
+    // Create the CreateAttachment request.
+    CreateAttachmentTypereqCreateAttach = new CreateAttachmentType();
+
+    // Identify the item that will have the attachments.
+    ItemIdType item = new ItemIdType();
+    item.Id = "AAAlAE1BQG1h";
+    item.ChangeKey = "DwAAABYAAA"; 
+    
+    // Add the parent item to the request.
+    reqCreateAttach.ParentItemId = item;
+
+    // Add attachments to the request.
+    reqCreateAttach.Attachments = new AttachmentType[2];
+    reqCreateAttach.Attachments[0] = itemAttach;
+    reqCreateAttach.Attachments[1] = fileAttach;
+
+    try
+    {
+        CreateAttachmentResponseType resp = esb.CreateAttachment(reqCreateAttach);
+        ArrayOfResponseMessagesType aorit = resp.ResponseMessages;
+        ResponseMessageType[] rmta = aorit.Items;
+
+        foreach (ResponseMessageType rmt in rmta)
+        {
+            if (rmt.ResponseClass == ResponseClassType.Success)
+            {
+                AttachmentInfoResponseMessageType airmt = rmt as AttachmentInfoResponseMessageType;
+                foreach (AttachmentType atch in airmt.Attachments)
+                {
+                    if (atch is ItemAttachmentType)
+                    {
+                        Console.WriteLine("Created item attachment");
+                    }
+                    else if (atch is FileAttachmentType)
+                    {
+                        Console.WriteLine("Created file attachment");
+                    }
+                    else
+                    {
+                        throw new Exception("Unknown attachment");
+                    }
+                }
+            }
+        }
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+    }
+}</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttachmentType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.AttachmentType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AttachmentType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>El <see cref="T:ExchangeWebServices.AttachmentType" /> constructor inicializa una nueva instancia de la <see cref="T:ExchangeWebServices.AttachmentType" /> clase.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachmentId">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.AttachmentIdType AttachmentId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.AttachmentIdType AttachmentId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.AttachmentId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttachmentId As AttachmentIdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::AttachmentIdType ^ AttachmentId { ExchangeWebServices::AttachmentIdType ^ get(); void set(ExchangeWebServices::AttachmentIdType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.AttachmentIdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentType.AttachmentId" /> (propiedad) Obtiene o establece el identificador de datos adjuntos. Esta propiedad es de lectura y escritura.</summary>
+        <value>El <see cref="P:ExchangeWebServices.AttachmentType.AttachmentId" /> (propiedad) devuelve un <see cref="T:ExchangeWebServices.AttachmentIdType" /> que contiene el identificador del elemento primario y los datos adjuntos.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentId">
+      <MemberSignature Language="C#" Value="public string ContentId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.ContentId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentType.ContentId" /> (propiedad) Obtiene o establece el identificador de contenido de datos adjuntos. Esta propiedad es de lectura y escritura.</summary>
+        <value>El <see cref="P:ExchangeWebServices.AttachmentType.ContentId" /> (propiedad) devuelve una cadena que contiene el identificador de contenido.</value>
+        <remarks>
+          <para>El valor de <see cref="P:ExchangeWebServices.AttachmentType.ContentId" /> se puede establecer en cualquier valor de cadena. Las aplicaciones pueden usar el <see cref="P:ExchangeWebServices.AttachmentType.ContentId" /> (propiedad) para implementar su propio mecanismo de identificación.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentLocation">
+      <MemberSignature Language="C#" Value="public string ContentLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentLocation" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.ContentLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentLocation As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentLocation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentType.ContentLocation" /> (propiedad) Obtiene o establece el identificador uniforme de recursos (URI) que corresponde a la ubicación del contenido de los datos adjuntos. Esta propiedad es de sólo lectura.</summary>
+        <value>El <see cref="P:ExchangeWebServices.AttachmentType.ContentLocation" /> (propiedad) devuelve una cadena que contiene el identificador URI para el contenido de los datos adjuntos.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public string ContentType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentType.ContentType" /> (propiedad) Obtiene o establece un valor que describe el tipo de extensiones multipropósito de correo Internet (MIME) del contenido de los datos adjuntos.</summary>
+        <value>El <see cref="P:ExchangeWebServices.AttachmentType.ContentType" /> (propiedad) devuelve un valor de tipo string que representa el tipo de contenido de los datos adjuntos.</value>
+        <remarks>
+          <para>Los siguientes son algunos ejemplos de cadenas que se pueden establecer en esta propiedad:</para>
+          <list type="bullet">
+            <item>
+              <description>texto sin formato</description>
+            </item>
+            <item>
+              <description>texto/xml</description>
+            </item>
+            <item>
+              <description>aplicación o secuencia de octetos</description>
+            </item>
+            <item>
+              <description>multipart/mixed</description>
+            </item>
+            <item>
+              <description>image/jpeg</description>
+            </item>
+          </list>
+          <para>
+            <b>Nota</b>: no es una lista exclusiva.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInline">
+      <MemberSignature Language="C#" Value="public bool IsInline { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInline" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.IsInline" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsInline As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInline { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentType.IsInline" /> (propiedad) Obtiene o establece un valor booleano que especifica si los datos adjuntos aparecen en línea dentro de un elemento.</summary>
+        <value>El valor de la <see cref="P:ExchangeWebServices.AttachmentType.IsInline" /> propiedad es <b>true</b> si los datos adjuntos aparecen en línea; en caso contrario, el valor es <b>false</b>.</value>
+        <remarks>
+          <para>Debe establecer el <see cref="P:ExchangeWebServices.AttachmentType.IsInlineSpecified" /> propiedad en <b>true</b> para que la <see cref="P:ExchangeWebServices.AttachmentType.IsInline" /> (propiedad) se serializa en la solicitud SOAP.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInlineSpecified">
+      <MemberSignature Language="C#" Value="public bool IsInlineSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInlineSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.IsInlineSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsInlineSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInlineSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentType.IsInlineSpecified" /> propiedad obtiene un valor booleano que especifica si el <see cref="P:ExchangeWebServices.AttachmentType.IsInline" /> (propiedad) se serializa en la solicitud SOAP. Esta propiedad es de sólo lectura.</summary>
+        <value>El valor de la <see cref="P:ExchangeWebServices.AttachmentType.IsInlineSpecified" /> propiedad es <b>true</b> si el <see cref="P:ExchangeWebServices.AttachmentType.IsInline" /> (propiedad) se serializa en la solicitud SOAP; de lo contrario, el valor es <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedTime">
+      <MemberSignature Language="C#" Value="public DateTime LastModifiedTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastModifiedTime" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.LastModifiedTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModifiedTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastModifiedTime { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentType.LastModifiedTime" /> propiedad obtiene un valor de fecha y hora que especifica cuándo se modificó por última vez los datos adjuntos.</summary>
+        <value>El valor de la <see cref="P:ExchangeWebServices.AttachmentType.LastModifiedTime" /> (propiedad) es un objeto DateTime.</value>
+        <remarks>
+          <para>Debe establecer el <see cref="P:ExchangeWebServices.AttachmentType.LastModifiedTimeSpecified" /> propiedad en <b>true</b> para que la <see cref="P:ExchangeWebServices.AttachmentType.LastModifiedTime" /> (propiedad) se serializa en la solicitud SOAP.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedTimeSpecified">
+      <MemberSignature Language="C#" Value="public bool LastModifiedTimeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LastModifiedTimeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.LastModifiedTimeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModifiedTimeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LastModifiedTimeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentType.LastModifiedTimeSpecified" /> propiedad obtiene un valor booleano que especifica si el <see cref="P:ExchangeWebServices.AttachmentType.LastModifiedTime" /> (propiedad) se serializa en la solicitud SOAP. Esta propiedad es de sólo lectura.</summary>
+        <value>El valor de la <see cref="P:ExchangeWebServices.AttachmentType.LastModifiedTimeSpecified" /> propiedad es <b>true</b> si el <see cref="P:ExchangeWebServices.AttachmentType.LastModifiedTime" /> (propiedad) se serializa en la solicitud SOAP; de lo contrario, el valor es <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentType.Name" /> (propiedad) Obtiene o establece el nombre de los datos adjuntos.</summary>
+        <value>El <see cref="P:ExchangeWebServices.AttachmentType.Name" /> (propiedad) devuelve un valor de tipo string que representa el nombre de los datos adjuntos.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public int Size { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Property Size As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentType.Size" /> (propiedad) Obtiene o establece un valor entero que representa el tamaño en bytes de los datos adjuntos.</summary>
+        <value>El valor de la <see cref="P:ExchangeWebServices.AttachmentType.Size" /> (propiedad) es un entero que representa el tamaño en bytes de los datos adjuntos.</value>
+        <remarks>
+          <para>Debe establecer el <see cref="P:ExchangeWebServices.AttachmentType.SizeSpecified" /> propiedad en <b>true</b> para que la <see cref="P:ExchangeWebServices.AttachmentType.Size" /> (propiedad) se serializa en la solicitud SOAP.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeSpecified">
+      <MemberSignature Language="C#" Value="public bool SizeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SizeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentType.SizeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property SizeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SizeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentType.SizeSpecified" /> propiedad obtiene un valor booleano que especifica si el <see cref="P:ExchangeWebServices.AttachmentType.SizeSpecified" /> (propiedad) se serializa en la solicitud SOAP. Esta propiedad es de sólo lectura.</summary>
+        <value>El valor de la <see cref="P:ExchangeWebServices.AttachmentType.SizeSpecified" /> propiedad es <b>true</b> si el <see cref="P:ExchangeWebServices.AttachmentType.SizeSpecified" /> (propiedad) se serializa en la solicitud SOAP; de lo contrario, el valor es <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

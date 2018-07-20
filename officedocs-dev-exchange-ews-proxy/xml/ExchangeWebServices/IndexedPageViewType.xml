@@ -1,0 +1,116 @@
+<Type Name="IndexedPageViewType" FullName="ExchangeWebServices.IndexedPageViewType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="b7700a17e967a03a529b952201c8b697f3c9029c" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20612709" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class IndexedPageViewType : ExchangeWebServices.BasePagingType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit IndexedPageViewType extends ExchangeWebServices.BasePagingType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.IndexedPageViewType" />
+  <TypeSignature Language="VB.NET" Value="Public Class IndexedPageViewType&#xA;Inherits BasePagingType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IndexedPageViewType : ExchangeWebServices::BasePagingType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BasePagingType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>El <see cref="T:ExchangeWebServices.IndexedPageViewType" /> clase describe cómo paginada elemento de información se devuelve para una solicitud FindItem o FindFolder.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IndexedPageViewType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.IndexedPageViewType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IndexedPageViewType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>El <see cref="T:ExchangeWebServices.IndexedPageViewType" /> constructor inicializa una nueva instancia de la <see cref="T:ExchangeWebServices.IndexedPageViewType" /> tipo.</summary>
+        <remarks>
+          <para>Buscar desde el final implica mover para el origen de la que se identifica con el <see cref="P:ExchangeWebServices.IndexedPageViewType.Offset" /> (propiedad). Además, el puntero se mueve de nuevo el número de registros solicitados. El número de registros solicitados no supera el valor especificado por el <see cref="P:ExchangeWebServices.BasePagingType.MaxEntriesReturned" /> (propiedad). Por ejemplo, si hay 100 registros y el desplazamiento es 25 desde el final, la búsqueda comienza desde 75. Si se devuelven 10 registros, el puntero se mueve hacia atrás un 10 adicionales a 65 de registros y devuelve los registros 65 a través de 75. El siguiente índice es 64. El desplazamiento desde el final de una página siguiente es 100 menos 64, que es igual a 36. 36 es el valor para el desvío siguiente desde el final para obtener la siguiente página indizada.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BasePoint">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.IndexBasePointType BasePoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.IndexBasePointType BasePoint" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.IndexedPageViewType.BasePoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property BasePoint As IndexBasePointType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::IndexBasePointType BasePoint { ExchangeWebServices::IndexBasePointType get(); void set(ExchangeWebServices::IndexBasePointType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.IndexBasePointType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.IndexedPageViewType.BasePoint" /> (propiedad) Obtiene o establece un valor que especifica si se iniciará la página de elementos al principio o al final del conjunto de elementos que se encuentran mediante el uso de los criterios de búsqueda. Esta propiedad es obligatoria.</summary>
+        <value>El <see cref="P:ExchangeWebServices.IndexedPageViewType.BasePoint" /> (propiedad) devuelve un <see cref="T:ExchangeWebServices.IndexBasePointType" /> valor de enumeración que especifica si se iniciará la página de elementos al principio o al final del conjunto de resultados.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public int Offset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Offset" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.IndexedPageViewType.Offset" />
+      <MemberSignature Language="VB.NET" Value="Public Property Offset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.IndexedPageViewType.Offset" /> (propiedad) Obtiene o establece el desplazamiento desde el <see cref="P:ExchangeWebServices.IndexedPageViewType.BasePoint" /> (propiedad). Esta propiedad es obligatoria.</summary>
+        <value>El <see cref="P:ExchangeWebServices.IndexedPageViewType.Offset" /> (propiedad) devuelve un valor de tipo integer que representa el desplazamiento desde el punto de base.</value>
+        <remarks>
+          <para>Si el <see cref="P:ExchangeWebServices.IndexedPageViewType.BasePoint" /> (propiedad) es igual a <see cref="F:ExchangeWebServices.IndexBasePointType.Beginning" />, el desplazamiento es positivo. Si el <see cref="P:ExchangeWebServices.IndexedPageViewType.BasePoint" /> (propiedad) es igual a <see cref="F:ExchangeWebServices.IndexBasePointType.End" />, el desplazamiento se administra como si fuese negativo. Esto identifica qué elemento será el primer elemento que se incluye en la respuesta.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

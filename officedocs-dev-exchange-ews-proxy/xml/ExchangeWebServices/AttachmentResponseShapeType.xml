@@ -1,0 +1,232 @@
+<Type Name="AttachmentResponseShapeType" FullName="ExchangeWebServices.AttachmentResponseShapeType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="9118d18531764d00171018178eac7952e51b8430" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20613192" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class AttachmentResponseShapeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit AttachmentResponseShapeType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.AttachmentResponseShapeType" />
+  <TypeSignature Language="VB.NET" Value="Public Class AttachmentResponseShapeType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AttachmentResponseShapeType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>El <see cref="T:ExchangeWebServices.AttachmentResponseShapeType" /> clase identifica propiedades adicionales para la <see cref="M:ExchangeWebServices.ExchangeServiceBinding.GetAttachment(ExchangeWebServices.GetAttachmentType)" /> método para devolver.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttachmentResponseShapeType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.AttachmentResponseShapeType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AttachmentResponseShapeType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>El <see cref="T:ExchangeWebServices.AttachmentResponseShapeType" /> constructor inicializa una nueva instancia de la <see cref="T:ExchangeWebServices.AttachmentResponseShapeType" /> clase.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdditionalProperties">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BasePathToElementType[] AdditionalProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BasePathToElementType[] AdditionalProperties" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentResponseShapeType.AdditionalProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdditionalProperties As BasePathToElementType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::BasePathToElementType ^&gt; ^ AdditionalProperties { cli::array &lt;ExchangeWebServices::BasePathToElementType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::BasePathToElementType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Path", IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("ExtendedFieldURI", typeof(ExchangeWebServices.PathToExtendedFieldType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("FieldURI", typeof(ExchangeWebServices.PathToUnindexedFieldType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("IndexedFieldURI", typeof(ExchangeWebServices.PathToIndexedFieldType), IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BasePathToElementType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.AdditionalProperties" /> (propiedad) Obtiene o establece las propiedades adicionales para devolver en una respuesta.</summary>
+        <value>El <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.AdditionalProperties" /> propiedad devuelve una matriz de <see cref="T:ExchangeWebServices.BasePathToElementType" /> objetos que identifican las propiedades adicionales para devolver en una respuesta.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BodyType">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BodyTypeResponseType BodyType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.BodyTypeResponseType BodyType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentResponseShapeType.BodyType" />
+      <MemberSignature Language="VB.NET" Value="Public Property BodyType As BodyTypeResponseType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::BodyTypeResponseType BodyType { ExchangeWebServices::BodyTypeResponseType get(); void set(ExchangeWebServices::BodyTypeResponseType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BodyTypeResponseType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyType" /> (propiedad) Obtiene o establece el formato de texto del cuerpo de una respuesta.</summary>
+        <value>El <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyType" /> (propiedad) devuelve uno de los <see cref="T:ExchangeWebServices.BodyTypeResponseType" /> valores de enumeración que indican el formato de texto del cuerpo en una respuesta.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BodyTypeSpecified">
+      <MemberSignature Language="C#" Value="public bool BodyTypeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BodyTypeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentResponseShapeType.BodyTypeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property BodyTypeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BodyTypeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyTypeSpecified" /> (propiedad) Obtiene o establece un valor booleano que indica si el <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyType" /> (propiedad) se serializa en el mensaje SOAP. Esta propiedad es obligatoria si la <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyType" /> se especifica la propiedad.</summary>
+        <value>El <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyTypeSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyType" /> (propiedad) se serializa en el mensaje SOAP; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterHtmlContent">
+      <MemberSignature Language="C#" Value="public bool FilterHtmlContent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FilterHtmlContent" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property FilterHtmlContent As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FilterHtmlContent { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" /> (propiedad) Obtiene o establece un valor booleano que especifica si el contenido HTML potencialmente no segura se filtra desde un archivo adjunto.</summary>
+        <value>El valor de la <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" /> propiedad es <b>true</b> si se filtra contenido HTML potencialmente no segura de un archivo adjunto; en caso contrario, el valor es <b>false</b>.</value>
+        <remarks>
+          <para>Debe establecer el <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContentSpecified" /> propiedad en <b>true</b> para que la <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" /> (propiedad) se serializa en la solicitud SOAP.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterHtmlContentSpecified">
+      <MemberSignature Language="C#" Value="public bool FilterHtmlContentSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FilterHtmlContentSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContentSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property FilterHtmlContentSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FilterHtmlContentSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContentSpecified" /> propiedad obtiene un valor booleano que especifica si el <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" /> (propiedad) se serializa en la solicitud SOAP. Esta propiedad es obligatoria si la <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" /> se especifica la propiedad.</summary>
+        <value>El valor de la <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContentSpecified" /> propiedad es <b>true</b> si el <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" /> (propiedad) se serializa en la solicitud SOAP; de lo contrario, el valor es <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeMimeContent">
+      <MemberSignature Language="C#" Value="public bool IncludeMimeContent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeMimeContent" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeMimeContent As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeMimeContent { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContent" /> (propiedad) Obtiene o establece un valor booleano que indica si el contenido MIME de un elemento o datos adjuntos se devuelve en una respuesta.</summary>
+        <value>El <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContent" /> propiedad devuelve <b>true</b> si se debe devolver contenido MIME; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeMimeContentSpecified">
+      <MemberSignature Language="C#" Value="public bool IncludeMimeContentSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeMimeContentSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContentSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeMimeContentSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeMimeContentSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContentSpecified" /> (propiedad) Obtiene o establece un valor booleano que indica si el <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContent" /> (propiedad) se serializa en el mensaje SOAP. Esta propiedad es obligatoria si la <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContent" /> se especifica la propiedad.</summary>
+        <value>El <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContentSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContent" /> (propiedad) se serializa en el mensaje SOAP; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

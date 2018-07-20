@@ -1,0 +1,181 @@
+<Type Name="GetSharingFolderType" FullName="ExchangeWebServices.GetSharingFolderType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="116a321855595547f8e2b52033350f58a541a8b7" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20612642" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class GetSharingFolderType : ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit GetSharingFolderType extends ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.GetSharingFolderType" />
+  <TypeSignature Language="VB.NET" Value="Public Class GetSharingFolderType&#xA;Inherits BaseRequestType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GetSharingFolderType : ExchangeWebServices::BaseRequestType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseRequestType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>El <see cref="T:ExchangeWebServices.GetSharingFolderType" /> clase representa una solicitud para obtener el identificador de la carpeta local de una carpeta compartida especificada.</summary>
+    <remarks>To be added.</remarks>
+    <example>
+      <para>En el ejemplo de código siguiente se muestra cómo obtener el identificador de la carpeta local de una carpeta compartida especificada. En este ejemplo, la carpeta compartida es la carpeta del calendario que pertenece a user1@contoso.com.</para>
+      <code>static void GetSharingFolderTest(ExchangeServiceBinding esb)
+{
+    // Create the request.
+    GetSharingFolderType gsfRequest = new GetSharingFolderType();
+    
+    // Specify the SMTP address of the mailbox that contains the folder that is being shared.
+    gsfRequest.SmtpAddress = "user1@contoso.com";
+    
+    // Specify the type of data that is being shared.
+    gsfRequest.DataType = SharingDataType.Calendar;
+    gsfRequest.DataTypeSpecified = true; 
+    
+    try
+    {
+      // Send the request and get the response.
+      GetSharingFolderResponseMessageType gsfResponse = esb.GetSharingFolder(gsfRequest); 
+    }
+    catch (Exception e) 
+    {
+      Console.WriteLine(e.Message); 
+    }
+}
+</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GetSharingFolderType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.GetSharingFolderType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GetSharingFolderType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>El <see cref="T:ExchangeWebServices.GetSharingFolderType" /> constructor inicializa una nueva instancia de la <see cref="T:ExchangeWebServices.GetSharingFolderType" /> clase.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataType">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.SharingDataType DataType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.SharingDataType DataType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.GetSharingFolderType.DataType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataType As SharingDataType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::SharingDataType DataType { ExchangeWebServices::SharingDataType get(); void set(ExchangeWebServices::SharingDataType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.SharingDataType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" /> Obtiene o establece un <see cref="T:ExchangeWebServices.SharingDataType" /> valor de enumeración que describe el tipo de datos que se comparten por una carpeta compartida.</summary>
+        <value>El valor de la <see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" /> (propiedad) es uno de los <see cref="T:ExchangeWebServices.SharingDataType" /> valores de enumeración.</value>
+        <remarks>
+          <para>En un <see cref="T:ExchangeWebServices.GetSharingFolderType" /> solicitud, el <see cref="P:ExchangeWebServices.GetSharingFolderType.SmtpAddress" /> se debe establecer la propiedad. Además, ya sea el <see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" /> (propiedad) o el <see cref="P:ExchangeWebServices.GetSharingFolderType.SharedFolderId" /> (propiedad) debe ser set, pero no ambos.</para>
+          <para>Si se establece el <see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" /> (propiedad), debe establecer el <see cref="P:ExchangeWebServices.GetSharingFolderType.DataTypeSpecified" /> propiedad en <b>true</b> para que la <see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" /> (propiedad) se serializa en la solicitud SOAP.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataTypeSpecified">
+      <MemberSignature Language="C#" Value="public bool DataTypeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DataTypeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.GetSharingFolderType.DataTypeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataTypeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DataTypeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.GetSharingFolderType.DataTypeSpecified" /> (propiedad) Obtiene o establece un valor booleano que especifica si el <see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" /> (propiedad) se serializa en la solicitud SOAP.</summary>
+        <value>El valor de la <see cref="P:ExchangeWebServices.GetSharingFolderType.DataTypeSpecified" /> propiedad es <b>true</b> si el <see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" /> (propiedad) se serializa en la solicitud SOAP; de lo contrario, el valor es <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SharedFolderId">
+      <MemberSignature Language="C#" Value="public string SharedFolderId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SharedFolderId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.GetSharingFolderType.SharedFolderId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SharedFolderId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SharedFolderId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.GetSharingFolderType.SharedFolderId" /> (propiedad) Obtiene o establece un valor de tipo string que contiene el identificador único de la carpeta compartida que se debe devolver cuyo identificador de la carpeta local.</summary>
+        <value>El valor de la <see cref="P:ExchangeWebServices.GetSharingFolderType.SharedFolderId" /> propiedad es una cadena que contiene el identificador único de la carpeta compartida.</value>
+        <remarks>
+          <para>En un <see cref="T:ExchangeWebServices.GetSharingFolderType" /> solicitud, el <see cref="P:ExchangeWebServices.GetSharingFolderType.SmtpAddress" /> se debe establecer la propiedad. Además, ya sea el <see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" /> (propiedad) o el <see cref="P:ExchangeWebServices.GetSharingFolderType.SharedFolderId" /> (propiedad) debe ser set, pero no ambos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmtpAddress">
+      <MemberSignature Language="C#" Value="public string SmtpAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SmtpAddress" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.GetSharingFolderType.SmtpAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property SmtpAddress As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SmtpAddress { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.GetSharingFolderType.SmtpAddress" /> (propiedad) Obtiene o establece la dirección de correo electrónico SMTP de la otra parte de la relación de uso compartida.</summary>
+        <value>El valor de la <see cref="P:ExchangeWebServices.GetSharingFolderType.SmtpAddress" /> propiedad es una cadena que contiene una dirección de correo electrónico SMTP.</value>
+        <remarks>
+          <para>En un <see cref="T:ExchangeWebServices.GetSharingFolderType" /> solicitud, el <see cref="P:ExchangeWebServices.GetSharingFolderType.SmtpAddress" /> se debe establecer la propiedad. Además, ya sea el <see cref="P:ExchangeWebServices.GetSharingFolderType.DataType" /> (propiedad) o el <see cref="P:ExchangeWebServices.GetSharingFolderType.SharedFolderId" /> (propiedad) debe ser set, pero no ambos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

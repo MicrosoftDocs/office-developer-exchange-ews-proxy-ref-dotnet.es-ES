@@ -1,0 +1,145 @@
+<Type Name="SyncFolderHierarchyResponseMessageType" FullName="ExchangeWebServices.SyncFolderHierarchyResponseMessageType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="c31ff33ac2effb5bb371c64450cbf73cfdcce18c" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20612193" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class SyncFolderHierarchyResponseMessageType : ExchangeWebServices.ResponseMessageType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SyncFolderHierarchyResponseMessageType extends ExchangeWebServices.ResponseMessageType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.SyncFolderHierarchyResponseMessageType" />
+  <TypeSignature Language="VB.NET" Value="Public Class SyncFolderHierarchyResponseMessageType&#xA;Inherits ResponseMessageType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SyncFolderHierarchyResponseMessageType : ExchangeWebServices::ResponseMessageType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.ResponseMessageType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>El <see cref="T:ExchangeWebServices.SyncFolderHierarchyResponseMessageType" /> clase contiene el estado y los resultados de una única llamada a la <see cref="M:ExchangeWebServices.ExchangeServiceBinding.SyncFolderHierarchy(ExchangeWebServices.SyncFolderHierarchyType)" /> (método).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SyncFolderHierarchyResponseMessageType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.SyncFolderHierarchyResponseMessageType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyncFolderHierarchyResponseMessageType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>El <see cref="T:ExchangeWebServices.SyncFolderHierarchyResponseMessageType" /> constructor inicializa una nueva instancia de la <see cref="T:ExchangeWebServices.SyncFolderHierarchyResponseMessageType" /> clase.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Changes">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.SyncFolderHierarchyChangesType Changes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.SyncFolderHierarchyChangesType Changes" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SyncFolderHierarchyResponseMessageType.Changes" />
+      <MemberSignature Language="VB.NET" Value="Public Property Changes As SyncFolderHierarchyChangesType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::SyncFolderHierarchyChangesType ^ Changes { ExchangeWebServices::SyncFolderHierarchyChangesType ^ get(); void set(ExchangeWebServices::SyncFolderHierarchyChangesType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.SyncFolderHierarchyChangesType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.SyncFolderHierarchyResponseMessageType.Changes" /> (propiedad) Obtiene o establece las diferencias entre las carpetas en el cliente y las carpetas en el servidor de Exchange.</summary>
+        <value>El <see cref="P:ExchangeWebServices.SyncFolderHierarchyResponseMessageType.Changes" /> (propiedad) devuelve un <see cref="T:ExchangeWebServices.SyncFolderHierarchyChangesType" /> object que contiene una matriz de tipos de cambios que se describen las diferencias entre las carpetas en el cliente y las carpetas en el servidor de Exchange secuenciada.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludesLastFolderInRange">
+      <MemberSignature Language="C#" Value="public bool IncludesLastFolderInRange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludesLastFolderInRange" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SyncFolderHierarchyResponseMessageType.IncludesLastFolderInRange" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludesLastFolderInRange As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludesLastFolderInRange { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.SyncFolderHierarchyResponseMessageType.IncludesLastFolderInRange" /> (propiedad) Obtiene o establece un valor booleano que indica si el último elemento para sincronizar está incluido en la respuesta.</summary>
+        <value>El <see cref="P:ExchangeWebServices.SyncFolderHierarchyResponseMessageType.IncludesLastFolderInRange" /> propiedad devuelve <b>true</b> si el último elemento para sincronizar está incluido en la respuesta; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludesLastFolderInRangeSpecified">
+      <MemberSignature Language="C#" Value="public bool IncludesLastFolderInRangeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludesLastFolderInRangeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SyncFolderHierarchyResponseMessageType.IncludesLastFolderInRangeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludesLastFolderInRangeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludesLastFolderInRangeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.SyncFolderHierarchyResponseMessageType.IncludesLastFolderInRangeSpecified" /> (propiedad) Obtiene o establece un valor booleano que indica si el <see cref="P:ExchangeWebServices.SyncFolderHierarchyResponseMessageType.IncludesLastFolderInRange" /> (propiedad) se serializa en el mensaje SOAP. Esta propiedad es obligatoria si la <see cref="P:ExchangeWebServices.SyncFolderHierarchyResponseMessageType.IncludesLastFolderInRange" /> se especifica la propiedad.</summary>
+        <value>El <see cref="P:ExchangeWebServices.SyncFolderHierarchyResponseMessageType.IncludesLastFolderInRangeSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.SyncFolderHierarchyResponseMessageType.IncludesLastFolderInRange" /> (propiedad) se puede serializar en el mensaje SOAP. de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncState">
+      <MemberSignature Language="C#" Value="public string SyncState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SyncState" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SyncFolderHierarchyResponseMessageType.SyncState" />
+      <MemberSignature Language="VB.NET" Value="Public Property SyncState As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SyncState { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.SyncFolderHierarchyResponseMessageType.SyncState" /> (propiedad) Obtiene o establece un formulario con codificación Base64 de los datos de sincronización que se usan para identificar el estado de sincronización.</summary>
+        <value>El <see cref="P:ExchangeWebServices.SyncFolderHierarchyResponseMessageType.SyncState" /> (propiedad) devuelve una cadena que contiene un formulario con codificación Base64 de los datos de sincronización que se usan para identificar el estado de sincronización.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
