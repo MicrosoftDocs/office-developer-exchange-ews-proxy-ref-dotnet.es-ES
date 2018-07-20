@@ -1,0 +1,153 @@
+<Type Name="TaskDelegateStateType" FullName="ExchangeWebServices.TaskDelegateStateType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="81b613663c4471f2ef9cc729e8add6a4fb58ed69" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20611804" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum TaskDelegateStateType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TaskDelegateStateType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.TaskDelegateStateType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TaskDelegateStateType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TaskDelegateStateType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>El <see cref="T:ExchangeWebServices.TaskDelegateStateType" /> (enumeración) representa los tipos de estado de una tarea delegada. Esta enumeración no se establece nunca.</summary>
+    <remarks>
+      <para>Esta enumeración se usa en el <see cref="P:ExchangeWebServices.TaskType.DelegationState" /> (propiedad) de la <see cref="T:ExchangeWebServices.TaskType" /> objeto. La asignación de esta propiedad es incorrecta. Esta información debe proceder de la propiedad MAPI 0x8113, pero en su lugar la información proviene de propiedad MAPI 0x812A. Estas propiedades son los mismos, excepto en que no incluye la propiedad 0x812A una <see cref="F:ExchangeWebServices.TaskDelegateStateType.Owned" /> valor, lo que significa que los valores de enumeración que se desplazan hacia delante. El siguiente es el orden de los valores de enumeración: NoMatch, OwnNew, propiedad, aceptado, rechazado y Max. Debido a que esta enumeración contiene errores, se recomienda que utilice la propiedad MAPI 0x8113 para obtener el estado de delegación de tareas.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Accepted">
+      <MemberSignature Language="C#" Value="Accepted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.TaskDelegateStateType Accepted = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.TaskDelegateStateType.Accepted" />
+      <MemberSignature Language="VB.NET" Value="Accepted" />
+      <MemberSignature Language="C++ CLI" Value="Accepted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.TaskDelegateStateType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>Especifica que la tarea se ha rechazado.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Declined">
+      <MemberSignature Language="C#" Value="Declined" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.TaskDelegateStateType Declined = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.TaskDelegateStateType.Declined" />
+      <MemberSignature Language="VB.NET" Value="Declined" />
+      <MemberSignature Language="C++ CLI" Value="Declined" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.TaskDelegateStateType</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>No se usa.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Max">
+      <MemberSignature Language="C#" Value="Max" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.TaskDelegateStateType Max = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.TaskDelegateStateType.Max" />
+      <MemberSignature Language="VB.NET" Value="Max" />
+      <MemberSignature Language="C++ CLI" Value="Max" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.TaskDelegateStateType</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>No se usa.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoMatch">
+      <MemberSignature Language="C#" Value="NoMatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.TaskDelegateStateType NoMatch = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.TaskDelegateStateType.NoMatch" />
+      <MemberSignature Language="VB.NET" Value="NoMatch" />
+      <MemberSignature Language="C++ CLI" Value="NoMatch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.TaskDelegateStateType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Especifica que no es una tarea delegada o que se ha creado pero no envía la solicitud de tarea. También se usa para un mensaje de solicitud de tarea, ya sea en la carpeta del propietario elementos enviados o Bandeja de entrada del delegado.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Owned">
+      <MemberSignature Language="C#" Value="Owned" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.TaskDelegateStateType Owned = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.TaskDelegateStateType.Owned" />
+      <MemberSignature Language="VB.NET" Value="Owned" />
+      <MemberSignature Language="C++ CLI" Value="Owned" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.TaskDelegateStateType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>Especifica que una tarea se ha aceptado. Este valor no debe ser en la enumeración.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnNew">
+      <MemberSignature Language="C#" Value="OwnNew" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.TaskDelegateStateType OwnNew = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.TaskDelegateStateType.OwnNew" />
+      <MemberSignature Language="VB.NET" Value="OwnNew" />
+      <MemberSignature Language="C++ CLI" Value="OwnNew" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.TaskDelegateStateType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>Especifica que se trata de una nueva solicitud de tarea que se ha enviado, pero el delegado todavía no ha respondido a la tarea.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

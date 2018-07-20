@@ -1,0 +1,363 @@
+<Type Name="FindItemParentType" FullName="ExchangeWebServices.FindItemParentType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="5c030c6539d9b7ef3808497984595289866e1f70" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20611558" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class FindItemParentType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FindItemParentType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.FindItemParentType" />
+  <TypeSignature Language="VB.NET" Value="Public Class FindItemParentType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FindItemParentType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>El <see cref="T:ExchangeWebServices.FindItemParentType" /> clase contiene los resultados de una búsqueda de una sola carpeta raíz durante una operación de FindItem.</summary>
+    <remarks>
+      <para>Una instancia de la <see cref="T:ExchangeWebServices.FindItemParentType" /> clase se devuelve en el objeto que es devuelto por la <see cref="M:ExchangeWebServices.ExchangeServiceBinding.FindFolder(ExchangeWebServices.FindFolderType)" /> (método).</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FindItemParentType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.FindItemParentType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FindItemParentType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>El <see cref="M:ExchangeWebServices.FindItemParentType.#ctor" /> constructor inicializa una nueva instancia de la <see cref="T:ExchangeWebServices.FindItemParentType" /> clase.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbsoluteDenominator">
+      <MemberSignature Language="C#" Value="public int AbsoluteDenominator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AbsoluteDenominator" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemParentType.AbsoluteDenominator" />
+      <MemberSignature Language="VB.NET" Value="Public Property AbsoluteDenominator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AbsoluteDenominator { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.FindItemParentType.AbsoluteDenominator" /> (propiedad) Obtiene el denominador siguiente para usar para la solicitud siguiente al realizar la paginación fraccionaria.</summary>
+        <value>El <see cref="P:ExchangeWebServices.FindItemParentType.AbsoluteDenominator" /> (propiedad) devuelve un valor de tipo integer que representa el denominador siguiente para usar para la solicitud siguiente al realizar la paginación fraccionaria.</value>
+        <remarks>
+          <para>Esta propiedad es de sólo lectura, debido a que sólo se devuelve en una respuesta. Set (propiedad) en la firma de la propiedad es un artefacto del generador de proxy.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbsoluteDenominatorSpecified">
+      <MemberSignature Language="C#" Value="public bool AbsoluteDenominatorSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AbsoluteDenominatorSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemParentType.AbsoluteDenominatorSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property AbsoluteDenominatorSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AbsoluteDenominatorSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.FindItemParentType.AbsoluteDenominatorSpecified" /> propiedad obtiene un valor booleano que especifica si el <see cref="P:ExchangeWebServices.FindItemParentType.AbsoluteDenominator" /> se puede serializar la propiedad en la respuesta SOAP.</summary>
+        <value>El <see cref="P:ExchangeWebServices.FindItemParentType.AbsoluteDenominatorSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.FindItemParentType.AbsoluteDenominator" /> (propiedad) se serializa en la respuesta SOAP; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludesLastItemInRange">
+      <MemberSignature Language="C#" Value="public bool IncludesLastItemInRange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludesLastItemInRange" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemParentType.IncludesLastItemInRange" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludesLastItemInRange As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludesLastItemInRange { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.FindItemParentType.IncludesLastItemInRange" /> propiedad obtiene un valor que indica si los resultados actuales contienen el último elemento de la consulta, de manera que no es necesaria la paginación aún más.</summary>
+        <value>El <see cref="P:ExchangeWebServices.FindItemParentType.IncludesLastItemInRange" /> propiedad devuelve <b>true</b> si los resultados de la actuales contienen el último elemento de la consulta; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludesLastItemInRangeSpecified">
+      <MemberSignature Language="C#" Value="public bool IncludesLastItemInRangeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludesLastItemInRangeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemParentType.IncludesLastItemInRangeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludesLastItemInRangeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludesLastItemInRangeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.FindItemParentType.IncludesLastItemInRangeSpecified" /> propiedad obtiene un valor que indica si el <see cref="P:ExchangeWebServices.FindItemParentType.IncludesLastItemInRange" /> (propiedad) se serializa en la respuesta SOAP.</summary>
+        <value>El <see cref="P:ExchangeWebServices.FindItemParentType.IncludesLastItemInRangeSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.FindItemParentType.IncludesLastItemInRange" /> (propiedad) se serializa en la respuesta SOAP; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>
+          <para>Esta propiedad es de sólo lectura, debido a que sólo se devuelve en una respuesta. Set (propiedad) en la firma de la propiedad es un artefacto del generador de proxy.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexedPagingOffset">
+      <MemberSignature Language="C#" Value="public int IndexedPagingOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 IndexedPagingOffset" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemParentType.IndexedPagingOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property IndexedPagingOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IndexedPagingOffset { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.FindItemParentType.IndexedPagingOffset" /> (propiedad) Obtiene el siguiente índice que se debe usar para la solicitud siguiente cuando se usa una vista indizada de paginación.</summary>
+        <value>El <see cref="P:ExchangeWebServices.FindItemParentType.IndexedPagingOffset" /> (propiedad) devuelve un valor de tipo integer que representa el siguiente índice que se debe usar para la solicitud siguiente cuando se usa una vista indizada de paginación.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexedPagingOffsetSpecified">
+      <MemberSignature Language="C#" Value="public bool IndexedPagingOffsetSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IndexedPagingOffsetSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemParentType.IndexedPagingOffsetSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IndexedPagingOffsetSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IndexedPagingOffsetSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.FindItemParentType.IndexedPagingOffsetSpecified" /> propiedad obtiene un valor que indica si el <see cref="P:ExchangeWebServices.FindItemParentType.IndexedPagingOffset" /> (propiedad) se serializa en la respuesta SOAP.</summary>
+        <value>El <see cref="P:ExchangeWebServices.FindItemParentType.IndexedPagingOffsetSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.FindItemParentType.IndexedPagingOffset" /> (propiedad) se serializa en la respuesta SOAP; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>
+          <para>Esta propiedad es de sólo lectura, debido a que sólo se devuelve en una respuesta. Set (propiedad) en la firma de la propiedad es un artefacto del generador de proxy.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object Item { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemParentType.Item" />
+      <MemberSignature Language="VB.NET" Value="Public Property Item As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Item { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("Groups", typeof(ExchangeWebServices.ArrayOfGroupedItemsType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("Items", typeof(ExchangeWebServices.ArrayOfRealItemsType))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.FindItemParentType.Item" /> propiedad obtiene un objeto que es del tipo <see cref="T:ExchangeWebServices.ArrayOfRealItemsType" /> o <see cref="T:ExchangeWebServices.ArrayOfGroupedItemsType" /> que contiene los elementos que se encuentra.</summary>
+        <value>El <see cref="P:ExchangeWebServices.FindItemParentType.Item" /> (propiedad) devuelve un objeto del tipo <see cref="T:ExchangeWebServices.ArrayOfRealItemsType" /> o <see cref="T:ExchangeWebServices.ArrayOfGroupedItemsType" /> que contiene los elementos que se encuentra.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumeratorOffset">
+      <MemberSignature Language="C#" Value="public int NumeratorOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumeratorOffset" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemParentType.NumeratorOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumeratorOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumeratorOffset { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.FindItemParentType.NumeratorOffset" /> (propiedad) representa el nuevo valor numerador debe usar para la solicitud siguiente con vistas de página fraccionaria.</summary>
+        <value>El <see cref="P:ExchangeWebServices.FindItemParentType.NumeratorOffset" /> (propiedad) devuelve un valor de tipo integer que representa el nuevo valor numerador debe usar para la solicitud siguiente con vistas de página fraccionaria.</value>
+        <remarks>
+          <para>Esta propiedad es de sólo lectura, debido a que sólo se devuelve en una respuesta. Set (propiedad) en la firma de la propiedad es un artefacto del generador de proxy.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumeratorOffsetSpecified">
+      <MemberSignature Language="C#" Value="public bool NumeratorOffsetSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NumeratorOffsetSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemParentType.NumeratorOffsetSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumeratorOffsetSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NumeratorOffsetSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.FindItemParentType.NumeratorOffsetSpecified" /> propiedad obtiene un valor que indica si el <see cref="P:ExchangeWebServices.FindItemParentType.NumeratorOffset" /> (propiedad) se serializa en la respuesta SOAP.</summary>
+        <value>El <see cref="P:ExchangeWebServices.FindItemParentType.NumeratorOffsetSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.FindItemParentType.NumeratorOffset" /> (propiedad) se serializa en la respuesta SOAP; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>
+          <para>Esta propiedad es de sólo lectura, debido a que sólo se devuelve en una respuesta. Set (propiedad) en la firma de la propiedad es un artefacto del generador de proxy.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalItemsInView">
+      <MemberSignature Language="C#" Value="public int TotalItemsInView { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TotalItemsInView" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemParentType.TotalItemsInView" />
+      <MemberSignature Language="VB.NET" Value="Public Property TotalItemsInView As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TotalItemsInView { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.FindItemParentType.TotalItemsInView" /> (propiedad) Obtiene el número total de elementos que pase la restricción.</summary>
+        <value>El <see cref="P:ExchangeWebServices.FindItemParentType.TotalItemsInView" /> (propiedad) devuelve un valor de tipo integer que representa el número total de elementos que pase la restricción.</value>
+        <remarks>
+          <para>En las operaciones de FindItem agrupadas, el <see cref="P:ExchangeWebServices.FindItemParentType.TotalItemsInView" /> (propiedad) devuelve el número total de elementos en la vista más el número total de grupos.</para>
+          <para>Esta propiedad es de sólo lectura debido a que sólo se devuelve en una respuesta. Set (propiedad) en la firma de la propiedad es un artefacto del generador de proxy de.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalItemsInViewSpecified">
+      <MemberSignature Language="C#" Value="public bool TotalItemsInViewSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TotalItemsInViewSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemParentType.TotalItemsInViewSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property TotalItemsInViewSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TotalItemsInViewSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.FindItemParentType.TotalItemsInViewSpecified" /> propiedad obtiene un valor que indica si el <see cref="P:ExchangeWebServices.FindItemParentType.TotalItemsInView" /> (propiedad) se serializa en la respuesta SOAP.</summary>
+        <value>El <see cref="P:ExchangeWebServices.FindItemParentType.TotalItemsInViewSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.FindItemParentType.TotalItemsInView" /> (propiedad) se serializa en la respuesta SOAP; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>
+          <para>Esta propiedad es de sólo lectura, debido a que sólo se devuelve en una respuesta. Set (propiedad) en la firma de la propiedad es un artefacto del generador de proxy.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,480 @@
+<Type Name="CreateItemType" FullName="ExchangeWebServices.CreateItemType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="70494162987b0fe844fa9cd849bab98bb5aefa79" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20611560" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class CreateItemType : ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CreateItemType extends ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.CreateItemType" />
+  <TypeSignature Language="VB.NET" Value="Public Class CreateItemType&#xA;Inherits BaseRequestType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CreateItemType : ExchangeWebServices::BaseRequestType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseRequestType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>El <see cref="T:ExchangeWebServices.CreateItemType" /> clase representa una solicitud para crear un objeto de elemento o una respuesta.</summary>
+    <remarks>
+      <para>El <see cref="T:ExchangeWebServices.CreateItemType" /> se usa para crear objetos de respuesta y los elementos en la base de datos de Exchange. En la siguiente tabla se describe los elementos y los objetos de respuesta que se pueden crear mediante el uso de <see cref="T:ExchangeWebServices.CreateItemType" />.</para>
+      <list type="table">
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.ItemType" />
+          </term>Representa un elemento genérico que se creará en la base de datos de Exchange.
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.MessageType" />
+          </term>Representa un mensaje de correo electrónico que se creará en la base de datos de Exchange.
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.TaskType" />
+          </term>Representa una tarea que se creará en la base de datos de Exchange.
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.ContactItemType" />
+          </term>Representa un elemento de contacto que se creará en la base de datos de Exchange.
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.CalendarItemType" />
+          </term>Representa una entrada de calendario que se creará en la base de datos de Exchange.
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.AcceptItemType" />
+          </term>Representa un objeto de respuesta para aceptar invitaciones a reuniones.
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.CancelCalendarItemType" />
+          </term>Representa un objeto de respuesta para la cancelación de un elemento de calendario.
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.DeclineItemType" />
+          </term>Representa un objeto de respuesta para rechazar las invitaciones a reuniones.
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.ForwardItemType" />
+          </term>Representa un objeto de respuesta para reenviar un elemento a otros usuarios.
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.RemoveItemType" />
+          </term>Representa un objeto de respuesta para la eliminación de un calendario de una reunión cancelada.
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.ReplyAllToItemType" />
+          </term>Representa un objeto de respuesta para responder a todos los destinatarios de un elemento.
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.ReplyToItemType" />
+          </term>Representa un objeto de respuesta para responder al remitente de un elemento.
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.TentativelyAcceptItemType" />
+          </term>Representa un objeto de respuesta para aceptar una invitación a una reunión de provisionalmente.
+        </item>
+        <item>
+          <term>
+            <see cref="T:ExchangeWebServices.SuppressReadReceiptType" />
+          </term>Representa un objeto de respuesta que se usa para suprimir confirmaciones de lectura.
+        </item>
+      </list>
+      <para>
+        <b>Nota</b>: <see cref="T:ExchangeWebServices.CreateItemType" /> no se puede usar para crear listas de distribución, los mensajes de la reunión, los mensajes de solicitud de reunión, los mensajes de respuesta de la reunión y mensajes de cancelación de la reunión.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>En el ejemplo de código siguiente se muestra una solicitud CreateItem que crea un solo correo electrónico, lo envía a varios destinatarios y guarda una copia de él en la carpeta predeterminada elementos enviados.</para>
+      <code>static void CreateEmail()
+{
+    // Create the CreateItem request.
+    CreateItemType createEmailRequest = new CreateItemType();
+
+    // Specifiy how the e-mail will be handled.
+    createEmailRequest.MessageDisposition = MessageDispositionType.SendAndSaveCopy;
+    createEmailRequest.MessageDispositionSpecified = true;
+
+    // Specify the location of sent items.
+    createEmailRequest.SavedItemFolderId = new TargetFolderIdType();
+    DistinguishedFolderIdType sentitems = new DistinguishedFolderIdType();
+    sentitems.Id = DistinguishedFolderIdNameType.sentitems;
+    createEmailRequest.SavedItemFolderId.Item = sentitems;
+
+    // Create the array of items.
+    createEmailRequest.Items = new NonEmptyArrayOfAllItemsType();
+
+    // Create a single e-mail message.
+    MessageType message = new MessageType();
+    message.Subject = "Daily Report";
+    message.Body = new BodyType();
+    message.Body.BodyType1 = BodyTypeType.Text;
+    message.Body.Value = "(1) Handled customer issues, (2) Saved the world.";
+    message.ItemClass = "IPM.Note";
+    message.Sender = new SingleRecipientType();
+    message.Sender.Item = new EmailAddressType();
+    message.Sender.Item.EmailAddress = "user1@example.com";
+    message.ToRecipients = new EmailAddressType[1];
+    message.ToRecipients[0] = new EmailAddressType();
+    message.ToRecipients[0].EmailAddress = "user2@example.com";
+    message.Sensitivity = SensitivityChoicesType.Normal;
+    message.SensitivitySpecified = true;
+    message.Importance = ImportanceChoicesType.High;
+    message.ImportanceSpecified = true;
+
+    // Add the message to the array of items to be created.
+    createEmailRequest.Items.Items = new ItemType[1];
+    createEmailRequest.Items.Items[0] = message;
+
+    try
+    {
+        // Create the service binding.
+        // Identify the service and the user.
+        ExchangeServiceBinding esb = new ExchangeServiceBinding();
+        esb.Credentials = new NetworkCredential("username", "password", "domain");
+        esb.Url = @"https://ExchangeServer.com/EWS/Exchange.asmx";
+
+        // Send a CreateItem request and get the CreateItem response.
+        CreateItemResponseType createItemResponse = esb.CreateItem(createEmailRequest);
+        ArrayOfResponseMessagesType responseMessages = createItemResponse.ResponseMessages;
+        
+        // Access the response message.
+        ResponseMessageType responseMessage = responseMessages.Items[0];
+        // Determine whether the request was a success.
+        if (responseMessages.Items[0].ResponseClass == ResponseClassType.Error)
+        {
+            throw new Exception(responseMessages.Items[0].MessageText);
+        }
+        if (responseMessage is ItemInfoResponseMessageType)
+        {
+            ItemInfoResponseMessageType createItemResp = (responseMessage as ItemInfoResponseMessageType);
+            ArrayOfRealItemsType aorit = createItemResp.Items;
+
+            // Determine whether there are items in response.
+            if (aorit.Items != null)
+            {
+                foreach (ItemType item in aorit.Items)
+                {
+                    if (item is ItemType)
+                    {
+                        ItemType myItem = (item as ItemType);
+                    }
+                    if (item is MessageType)
+                    {
+                        MessageType myMessage = (item as MessageType);
+                    }
+                    // TODO: Add logic to check and cast for all other types.
+                }
+            }
+        }
+        else
+        {
+            Console.WriteLine("Item(s) created");
+        }
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+    }
+}</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CreateItemType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.CreateItemType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CreateItemType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>El <see cref="T:ExchangeWebServices.CreateItemType" /> constructor inicializa una nueva instancia de la <see cref="T:ExchangeWebServices.CreateItemType" /> clase.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.NonEmptyArrayOfAllItemsType Items { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.NonEmptyArrayOfAllItemsType Items" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CreateItemType.Items" />
+      <MemberSignature Language="VB.NET" Value="Public Property Items As NonEmptyArrayOfAllItemsType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::NonEmptyArrayOfAllItemsType ^ Items { ExchangeWebServices::NonEmptyArrayOfAllItemsType ^ get(); void set(ExchangeWebServices::NonEmptyArrayOfAllItemsType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.NonEmptyArrayOfAllItemsType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.CreateItemType.Items" /> (propiedad) Obtiene o establece la colección de elementos que desea crear.</summary>
+        <value>El <see cref="P:ExchangeWebServices.CreateItemType.Items" /> (propiedad) devuelve un <see cref="T:ExchangeWebServices.NonEmptyArrayOfAllItemsType" /> colección que contiene todos los elementos para crear.</value>
+        <remarks>
+          <para>El <see cref="T:ExchangeWebServices.NonEmptyArrayOfAllItemsType" /> colección puede contener cualquiera de los siguientes elementos:</para>
+          <list type="bullet">
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.ItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.MessageType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.CalendarItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.ContactItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.DistributionListType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.MeetingMessageType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.MeetingRequestMessageType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.MeetingResponseMessageType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.MeetingCancellationMessageType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.TaskType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.ReplyToItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.ReplyAllToItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.ForwardItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.AcceptItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.TentativelyAcceptItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.DeclineItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.CancelCalendarItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.RemoveItemType" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:ExchangeWebServices.SuppressReadReceiptType" />
+              </description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageDisposition">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.MessageDispositionType MessageDisposition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.MessageDispositionType MessageDisposition" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CreateItemType.MessageDisposition" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessageDisposition As MessageDispositionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::MessageDispositionType MessageDisposition { ExchangeWebServices::MessageDispositionType get(); void set(ExchangeWebServices::MessageDispositionType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.MessageDispositionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.CreateItemType.MessageDisposition" /> (propiedad) Obtiene o establece una enumeración que describe cómo se administra un elemento después de crearla. Esta propiedad es obligatoria para mensajes de correo electrónico.</summary>
+        <value>El <see cref="P:ExchangeWebServices.CreateItemType.MessageDisposition" /> (propiedad) devuelve un <see cref="T:ExchangeWebServices.MessageDispositionType" /> valor de enumeración que representa cómo se administra un elemento después de crearla.</value>
+        <remarks>
+          <para>Debe establecer el <see cref="P:ExchangeWebServices.CreateItemType.MessageDispositionSpecified" /> propiedad en <b>true</b> para que la <see cref="P:ExchangeWebServices.CreateItemType.MessageDisposition" /> (propiedad) se serializa en la solicitud SOAP Simple Object Access Protocol ().</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageDispositionSpecified">
+      <MemberSignature Language="C#" Value="public bool MessageDispositionSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MessageDispositionSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CreateItemType.MessageDispositionSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessageDispositionSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MessageDispositionSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.CreateItemType.MessageDispositionSpecified" /> (propiedad) Obtiene o establece un valor booleano que especifica si el <see cref="P:ExchangeWebServices.CreateItemType.MessageDisposition" /> (propiedad) se serializa en la solicitud SOAP Simple Object Access Protocol ().</summary>
+        <value>El <see cref="P:ExchangeWebServices.CreateItemType.MessageDispositionSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.CreateItemType.MessageDisposition" /> (propiedad) se serializa en la solicitud SOAP; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SavedItemFolderId">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.TargetFolderIdType SavedItemFolderId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.TargetFolderIdType SavedItemFolderId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CreateItemType.SavedItemFolderId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SavedItemFolderId As TargetFolderIdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::TargetFolderIdType ^ SavedItemFolderId { ExchangeWebServices::TargetFolderIdType ^ get(); void set(ExchangeWebServices::TargetFolderIdType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.TargetFolderIdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.CreateItemType.SavedItemFolderId" /> (propiedad) Obtiene o establece la carpeta en la que se guardan los elementos nuevos.</summary>
+        <value>El <see cref="P:ExchangeWebServices.CreateItemType.SavedItemFolderId" /> (propiedad) devuelve un <see cref="T:ExchangeWebServices.TargetFolderIdType" /> que identifica la carpeta que contiene elementos guardados.</value>
+        <remarks>
+          <para>Si no se establece esta propiedad, se usa la carpeta predeterminada para guardar los elementos. Guarda los mensajes se guardarán en la carpeta Borradores predeterminada de correo electrónico.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendMeetingInvitations">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.CalendarItemCreateOrDeleteOperationType SendMeetingInvitations { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.CalendarItemCreateOrDeleteOperationType SendMeetingInvitations" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" />
+      <MemberSignature Language="VB.NET" Value="Public Property SendMeetingInvitations As CalendarItemCreateOrDeleteOperationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::CalendarItemCreateOrDeleteOperationType SendMeetingInvitations { ExchangeWebServices::CalendarItemCreateOrDeleteOperationType get(); void set(ExchangeWebServices::CalendarItemCreateOrDeleteOperationType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemCreateOrDeleteOperationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" /> (propiedad) Obtiene o establece una enumeración que describe cómo se controlan las convocatorias de reunión después de que se crean. Esta propiedad es necesaria para los elementos del calendario.</summary>
+        <value>El <see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" /> (propiedad) devuelve un <see cref="T:ExchangeWebServices.CalendarItemCreateOrDeleteOperationType" /> valor de enumeración que representa cómo se controlan las convocatorias de reunión.</value>
+        <remarks>
+          <para>Debe establecer el <see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitationsSpecified" /> propiedad en <b>true</b> para que la <see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" /> (propiedad) se serializa en la solicitud SOAP Simple Object Access Protocol ().</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendMeetingInvitationsSpecified">
+      <MemberSignature Language="C#" Value="public bool SendMeetingInvitationsSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SendMeetingInvitationsSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CreateItemType.SendMeetingInvitationsSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property SendMeetingInvitationsSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SendMeetingInvitationsSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitationsSpecified" /> (propiedad) Obtiene o establece un valor booleano que especifica si el <see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" /> se serializa en la solicitud SOAP Simple Object Access Protocol ().</summary>
+        <value>El <see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitationsSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" /> (propiedad) se serializa en la solicitud SOAP; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

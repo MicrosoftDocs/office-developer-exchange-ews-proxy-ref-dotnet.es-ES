@@ -1,0 +1,169 @@
+<Type Name="SetUserOofSettingsRequest" FullName="ExchangeWebServices.SetUserOofSettingsRequest">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="b389b34e668bec3ee0ee34fc2a7710c863909129" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20611555" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class SetUserOofSettingsRequest : ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SetUserOofSettingsRequest extends ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.SetUserOofSettingsRequest" />
+  <TypeSignature Language="VB.NET" Value="Public Class SetUserOofSettingsRequest&#xA;Inherits BaseRequestType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SetUserOofSettingsRequest : ExchangeWebServices::BaseRequestType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseRequestType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>El <see cref="T:ExchangeWebServices.SetUserOofSettingsRequest" /> clase representa una solicitud para establecer la configuración de fuera de oficina (OOF) de un usuario.</summary>
+    <remarks>
+      <para>La operación de SetUserOofSettings puede utilizarse para establecer la configuración OOF interna y externa.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>En el ejemplo siguiente se muestra cómo establecer la configuración de fuera de la oficina interna y externa para un buzón de Exchange.</para>
+      <code>static void SetOOF()
+{
+    // Identify the service and the user.
+    ExchangeServiceBinding service = new ExchangeServiceBinding();
+    service.Credentials = new NetworkCredential("UserName", "PassWord", "Domain");
+    service.Url = @"http://exchangeserver.example.com/EWS/Exchange.asmx";
+
+    // Identify the user mailbox for which to set OOF information.
+    EmailAddress emailAddress = new EmailAddress();
+
+    emailAddress.Address = "donhall@example.com";
+
+    UserOofSettings OOFSettings = new UserOofSettings();
+
+    // Identify the time that a user is OOF. 
+    Duration duration = new Duration();
+    duration.StartTime = DateTime.Now;
+    duration.EndTime = DateTime.Now.AddHours(4);
+    OOFSettings.Duration = duration;
+
+    // Identify the external audience.
+    OOFSettings.ExternalAudience = ExternalAudience.Known;
+
+    // Create the reply messages.
+    ReplyBody internalReply = new ReplyBody();
+    ReplyBody externalReply = new ReplyBody();
+    externalReply.Message = "This is my external OOF reply";
+    internalReply.Message = "This is my internal OOF reply";
+
+    OOFSettings.ExternalReply = externalReply;
+    OOFSettings.InternalReply = internalReply;
+
+    // Set OOF state.
+    OOFSettings.OofState = OofState.Enabled;
+
+    // Create the request.
+    SetUserOofSettingsRequest &lt;span class="label"&gt;request&lt;/span&gt; = new SetUserOofSettingsRequest();
+    &lt;span class="label"&gt;request&lt;/span&gt;.Mailbox = emailAddress;
+    &lt;span class="label"&gt;request&lt;/span&gt;.UserOofSettings = OOFSettings;
+
+    try
+    {
+        // Send the request and return the response.
+        SetUserOofSettingsResponse response = service.SetUserOofSettings(&lt;span class="label"&gt;request&lt;/span&gt;);
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+    }
+}</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SetUserOofSettingsRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.SetUserOofSettingsRequest.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SetUserOofSettingsRequest();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>El <see cref="T:ExchangeWebServices.SetUserOofSettingsRequest" /> constructor inicializa una nueva instancia de la <see cref="T:ExchangeWebServices.SetUserOofSettingsRequest" /> clase.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mailbox">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.EmailAddress Mailbox { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.EmailAddress Mailbox" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SetUserOofSettingsRequest.Mailbox" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mailbox As EmailAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::EmailAddress ^ Mailbox { ExchangeWebServices::EmailAddress ^ get(); void set(ExchangeWebServices::EmailAddress ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.EmailAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.SetUserOofSettingsRequest.Mailbox" /> (propiedad) Obtiene o establece el usuario del buzón que se va a tener la configuración actualizada de fuera de oficina (OOF). Esta propiedad es obligatoria. Esto es una propiedad de lectura y escritura.</summary>
+        <value>El <see cref="P:ExchangeWebServices.SetUserOofSettingsRequest.Mailbox" /> (propiedad) devuelve un <see cref="T:ExchangeWebServices.EmailAddress" /> objeto.</value>
+        <remarks>
+          <para>Requiere la única propiedad que se debe establecer en el <see cref="T:ExchangeWebServices.EmailAddress" /> objeto es el <see cref="P:ExchangeWebServices.EmailAddress.Address" /> propiedad que identifica el buzón del usuario.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserOofSettings">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.UserOofSettings UserOofSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.UserOofSettings UserOofSettings" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SetUserOofSettingsRequest.UserOofSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserOofSettings As UserOofSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::UserOofSettings ^ UserOofSettings { ExchangeWebServices::UserOofSettings ^ get(); void set(ExchangeWebServices::UserOofSettings ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.UserOofSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.SetUserOofSettingsRequest.UserOofSettings" /> (propiedad) Obtiene o establece la configuración de fuera de oficina (OOF) de un usuario de buzón de correo. Esta propiedad es obligatoria. Esto es una propiedad de lectura y escritura.</summary>
+        <value>El <see cref="P:ExchangeWebServices.SetUserOofSettingsRequest.UserOofSettings" /> (propiedad) devuelve un <see cref="T:ExchangeWebServices.UserOofSettings" /> objeto que describe la configuración de fuera de la oficina de un usuario.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

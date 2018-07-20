@@ -1,0 +1,462 @@
+<Type Name="ManagedFolderInformationType" FullName="ExchangeWebServices.ManagedFolderInformationType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="07c41d06f0257c13937dbec0ffeb83337807c4a0" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20611926" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class ManagedFolderInformationType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ManagedFolderInformationType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.ManagedFolderInformationType" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagedFolderInformationType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagedFolderInformationType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>El <see cref="T:ExchangeWebServices.ManagedFolderInformationType" /> clase contiene información sobre una carpeta personalizada administrada.</summary>
+    <remarks>
+      <para>El <see cref="T:ExchangeWebServices.ManagedFolderInformationType" /> propiedades son de sólo lectura.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagedFolderInformationType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.ManagedFolderInformationType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagedFolderInformationType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>El <see cref="T:ExchangeWebServices.ManagedFolderInformationType" /> constructor inicializa una nueva instancia de la <see cref="T:ExchangeWebServices.ManagedFolderInformationType" /> clase.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanDelete">
+      <MemberSignature Language="C#" Value="public bool CanDelete { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanDelete" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.CanDelete" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanDelete As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanDelete { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanDelete" /> propiedad obtiene un valor que indica si se puede eliminar una carpeta administrada por un cliente.</summary>
+        <value>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanDelete" /> propiedad devuelve <b>true</b> si se puede eliminar una carpeta administrada; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>
+          <para>Esta propiedad es de sólo lectura, debido a que sólo se devuelve en una respuesta. Set (propiedad) en la firma de la propiedad es un artefacto del generador de proxy.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanDeleteSpecified">
+      <MemberSignature Language="C#" Value="public bool CanDeleteSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanDeleteSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.CanDeleteSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanDeleteSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanDeleteSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanDeleteSpecified" /> propiedad obtiene un valor booleano que especifica si el <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanDelete" /> (propiedad) se ha devuelto en la respuesta SOAP.</summary>
+        <value>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanDeleteSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanDelete" /> se puede serializar la propiedad en la respuesta SOAP; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRenameOrMove">
+      <MemberSignature Language="C#" Value="public bool CanRenameOrMove { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRenameOrMove" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.CanRenameOrMove" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanRenameOrMove As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanRenameOrMove { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanRenameOrMove" /> propiedad obtiene un valor que indica si se puede cambiar el nombre o movida por un cliente de una carpeta administrada.</summary>
+        <value>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanRenameOrMove" /> propiedad devuelve <b>true</b> si una carpeta administrada puede ser cambiado de nombre o se mueve; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>
+          <para>Esta propiedad es de sólo lectura, debido a que sólo se devuelve en una respuesta. Set (propiedad) en la firma de la propiedad es un artefacto del generador de proxy.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRenameOrMoveSpecified">
+      <MemberSignature Language="C#" Value="public bool CanRenameOrMoveSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRenameOrMoveSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.CanRenameOrMoveSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanRenameOrMoveSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanRenameOrMoveSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanRenameOrMoveSpecified" /> propiedad obtiene un valor booleano que especifica si el <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanRenameOrMove" /> (propiedad) se ha devuelto en la respuesta SOAP.</summary>
+        <value>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanRenameOrMoveSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.ManagedFolderInformationType.CanRenameOrMove" /> (propiedad) se ha serializado en la respuesta SOAP; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Comment">
+      <MemberSignature Language="C#" Value="public string Comment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Comment" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.Comment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Comment As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comment { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.Comment" /> (propiedad) Obtiene un comentario que está asociado a una carpeta administrada.</summary>
+        <value>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.Comment" /> (propiedad) devuelve un valor de tipo string que representa un comentario que está asociado a una carpeta administrada.</value>
+        <remarks>
+          <para>Esta propiedad es de sólo lectura, debido a que sólo se devuelve en una respuesta. Set (propiedad) en la firma de la propiedad es un artefacto del generador de proxy.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FolderSize">
+      <MemberSignature Language="C#" Value="public int FolderSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FolderSize" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.FolderSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property FolderSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FolderSize { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.FolderSize" /> propiedad obtiene un valor que describe el tamaño total de todo el contenido de una carpeta administrada.</summary>
+        <value>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.FolderSize" /> (propiedad) devuelve un entero que describe el tamaño total de una carpeta administrada.</value>
+        <remarks>
+          <para>Esta propiedad es de sólo lectura, debido a que sólo se devuelve en una respuesta. Set (propiedad) en la firma de la propiedad es un artefacto del generador de proxy.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FolderSizeSpecified">
+      <MemberSignature Language="C#" Value="public bool FolderSizeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FolderSizeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.FolderSizeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property FolderSizeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FolderSizeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.FolderSizeSpecified" /> propiedad obtiene un valor booleano que especifica si el <see cref="P:ExchangeWebServices.ManagedFolderInformationType.FolderSize" /> (propiedad) se ha devuelto en la respuesta SOAP.</summary>
+        <value>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.FolderSizeSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.ManagedFolderInformationType.FolderSize" /> (propiedad) se ha serializado en la respuesta SOAP; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasQuota">
+      <MemberSignature Language="C#" Value="public bool HasQuota { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasQuota" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.HasQuota" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasQuota As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasQuota { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.HasQuota" /> propiedad obtiene un valor que indica si una carpeta administrada tiene una cuota.</summary>
+        <value>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.HasQuota" /> propiedad devuelve <b>true</b> si la carpeta administrada tiene una cuota; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>
+          <para>Esta propiedad es de sólo lectura, debido a que sólo se devuelve en una respuesta. Set (propiedad) en la firma de la propiedad es un artefacto del generador de proxy.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasQuotaSpecified">
+      <MemberSignature Language="C#" Value="public bool HasQuotaSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasQuotaSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.HasQuotaSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasQuotaSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasQuotaSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.HasQuotaSpecified" /> propiedad obtiene un valor booleano que especifica si el <see cref="P:ExchangeWebServices.ManagedFolderInformationType.HasQuota" /> (propiedad) se ha devuelto en la respuesta SOAP.</summary>
+        <value>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.HasQuotaSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.ManagedFolderInformationType.HasQuota" /> se puede serializar la propiedad en la respuesta SOAP; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HomePage">
+      <MemberSignature Language="C#" Value="public string HomePage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HomePage" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.HomePage" />
+      <MemberSignature Language="VB.NET" Value="Public Property HomePage As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HomePage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.HomePage" /> (propiedad) Obtiene la dirección URL que es la página principal predeterminada para la carpeta administrada.</summary>
+        <value>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.HomePage" /> (propiedad) devuelve una dirección URL.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsManagedFoldersRoot">
+      <MemberSignature Language="C#" Value="public bool IsManagedFoldersRoot { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsManagedFoldersRoot" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.IsManagedFoldersRoot" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsManagedFoldersRoot As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsManagedFoldersRoot { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.IsManagedFoldersRoot" /> propiedad obtiene un valor booleano que indica si la carpeta administrada es la carpeta raíz administrada.</summary>
+        <value>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.IsManagedFoldersRoot" /> propiedad devuelve <b>true</b> si la carpeta administrada es la carpeta raíz administrada; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>
+          <para>Esta propiedad es de sólo lectura, debido a que sólo se devuelve en una respuesta. Set (propiedad) en la firma de la propiedad es un artefacto del generador de proxy.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsManagedFoldersRootSpecified">
+      <MemberSignature Language="C#" Value="public bool IsManagedFoldersRootSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsManagedFoldersRootSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.IsManagedFoldersRootSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsManagedFoldersRootSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsManagedFoldersRootSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.IsManagedFoldersRootSpecified" /> propiedad obtiene un valor booleano que indica si el <see cref="P:ExchangeWebServices.ManagedFolderInformationType.IsManagedFoldersRoot" /> (propiedad) se ha devuelto en la respuesta SOAP.</summary>
+        <value>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.IsManagedFoldersRootSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.ManagedFolderInformationType.IsManagedFoldersRoot" /> se puede serializar la propiedad en la respuesta SOAP; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedFolderId">
+      <MemberSignature Language="C#" Value="public string ManagedFolderId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ManagedFolderId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.ManagedFolderId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ManagedFolderId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ManagedFolderId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.ManagedFolderId" /> (propiedad) Obtiene el identificador de una carpeta administrada.</summary>
+        <value>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.ManagedFolderId" /> (propiedad) devuelve un valor de tipo string que representa el identificador de una carpeta administrada.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MustDisplayComment">
+      <MemberSignature Language="C#" Value="public bool MustDisplayComment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MustDisplayComment" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.MustDisplayComment" />
+      <MemberSignature Language="VB.NET" Value="Public Property MustDisplayComment As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MustDisplayComment { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.MustDisplayComment" /> propiedad obtiene un valor que indica si se debe mostrar el comentario de la carpeta administrada.</summary>
+        <value>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.MustDisplayComment" /> propiedad devuelve <b>true</b> si se debe mostrar el comentario de la carpeta administrada; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>
+          <para>Esta propiedad es de sólo lectura, debido a que sólo se devuelve en una respuesta. Set (propiedad) en la firma de la propiedad es un artefacto del generador de proxy.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MustDisplayCommentSpecified">
+      <MemberSignature Language="C#" Value="public bool MustDisplayCommentSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MustDisplayCommentSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.MustDisplayCommentSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MustDisplayCommentSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MustDisplayCommentSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.MustDisplayCommentSpecified" /> propiedad obtiene un valor que especifica si el <see cref="P:ExchangeWebServices.ManagedFolderInformationType.MustDisplayComment" /> se puede serializar la propiedad en la respuesta SOAP.</summary>
+        <value>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.MustDisplayCommentSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.ManagedFolderInformationType.MustDisplayComment" /> se puede serializar la propiedad en la respuesta SOAP; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StorageQuota">
+      <MemberSignature Language="C#" Value="public int StorageQuota { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StorageQuota" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.StorageQuota" />
+      <MemberSignature Language="VB.NET" Value="Public Property StorageQuota As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StorageQuota { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.StorageQuota" /> (propiedad) Obtiene la cuota de almacenamiento para una carpeta administrada.</summary>
+        <value>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.StorageQuota" /> (propiedad) devuelve un valor de tipo integer que representa la cuota de almacenamiento para una carpeta administrada.</value>
+        <remarks>
+          <para>Esta propiedad es de sólo lectura, debido a que sólo se devuelve en una respuesta. Set (propiedad) en la firma de la propiedad es un artefacto del generador de proxy.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StorageQuotaSpecified">
+      <MemberSignature Language="C#" Value="public bool StorageQuotaSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StorageQuotaSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ManagedFolderInformationType.StorageQuotaSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property StorageQuotaSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StorageQuotaSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.StorageQuotaSpecified" /> propiedad obtiene un valor booleano que especifica si el <see cref="P:ExchangeWebServices.ManagedFolderInformationType.StorageQuota" /> (propiedad) se ha devuelto en la respuesta SOAP.</summary>
+        <value>El <see cref="P:ExchangeWebServices.ManagedFolderInformationType.StorageQuotaSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.ManagedFolderInformationType.StorageQuota" /> se puede serializar la propiedad en la respuesta SOAP; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

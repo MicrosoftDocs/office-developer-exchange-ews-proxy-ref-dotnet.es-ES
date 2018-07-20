@@ -1,0 +1,189 @@
+<Type Name="UserIdType" FullName="ExchangeWebServices.UserIdType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="4319e9ebcf1fdf9ab86fc97969b33d489df26310" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20611671" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class UserIdType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit UserIdType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.UserIdType" />
+  <TypeSignature Language="VB.NET" Value="Public Class UserIdType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UserIdType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>El <see cref="T:ExchangeWebServices.UserIdType" /> clase identifica a un usuario o un usuario delegado que tiene permisos de acceso de la carpeta.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UserIdType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.UserIdType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UserIdType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>El <see cref="T:ExchangeWebServices.UserIdType" /> constructor inicializa una nueva instancia de la <see cref="T:ExchangeWebServices.UserIdType" /> clase.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.UserIdType.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.UserIdType.DisplayName" /> (propiedad) Obtiene o establece el nombre de usuario para la presentación.</summary>
+        <value>El <see cref="P:ExchangeWebServices.UserIdType.DisplayName" /> (propiedad) devuelve una cadena que contiene el nombre de usuario para la presentación.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DistinguishedUser">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.DistinguishedUserType DistinguishedUser { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.DistinguishedUserType DistinguishedUser" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.UserIdType.DistinguishedUser" />
+      <MemberSignature Language="VB.NET" Value="Public Property DistinguishedUser As DistinguishedUserType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::DistinguishedUserType DistinguishedUser { ExchangeWebServices::DistinguishedUserType get(); void set(ExchangeWebServices::DistinguishedUserType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DistinguishedUserType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.UserIdType.DistinguishedUser" /> (propiedad) Obtiene o establece un valor que identifica las cuentas de usuario Anonymouse y establecer como predeterminado para el acceso de delegado.</summary>
+        <value>El <see cref="P:ExchangeWebServices.UserIdType.DistinguishedUser" /> (propiedad) devuelve uno de los <see cref="T:ExchangeWebServices.DistinguishedUserType" /> valores de enumeración.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DistinguishedUserSpecified">
+      <MemberSignature Language="C#" Value="public bool DistinguishedUserSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DistinguishedUserSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.UserIdType.DistinguishedUserSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property DistinguishedUserSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DistinguishedUserSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.UserIdType.DistinguishedUserSpecified" /> (propiedad) Obtiene o establece un valor booleano que especifica si el <see cref="P:ExchangeWebServices.UserIdType.DistinguishedUser" /> (propiedad) se serializa en el mensaje SOAP. Esta propiedad es obligatoria si la <see cref="P:ExchangeWebServices.UserIdType.DistinguishedUser" /> se especifica la propiedad.</summary>
+        <value>El <see cref="P:ExchangeWebServices.UserIdType.DistinguishedUserSpecified" /> propiedad devuelve <b>true</b> si el <see cref="P:ExchangeWebServices.UserIdType.DistinguishedUser" /> (propiedad) se ha especificado; de lo contrario, la propiedad devuelve <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExternalUserIdentity">
+      <MemberSignature Language="C#" Value="public string ExternalUserIdentity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExternalUserIdentity" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.UserIdType.ExternalUserIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExternalUserIdentity As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExternalUserIdentity { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>Devuelve <see cref="T:System.String" />.</value>
+        <remarks>
+          <para>
+            <b>Nota</b>: este miembro se aplica a las versiones de Exchange Server 2010 Service Pack 1 (SP1), incluido Exchange Online a partir de Exchange.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrimarySmtpAddress">
+      <MemberSignature Language="C#" Value="public string PrimarySmtpAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PrimarySmtpAddress" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.UserIdType.PrimarySmtpAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrimarySmtpAddress As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrimarySmtpAddress { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.UserIdType.PrimarySmtpAddress" /> (propiedad) Obtiene o establece la dirección SMTP primaria de una cuenta que se usa para el acceso de delegado.</summary>
+        <value>El <see cref="P:ExchangeWebServices.UserIdType.PrimarySmtpAddress" /> (propiedad) devuelve una cadena que contiene la dirección SMTP principal de la cuenta de delegado.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SID">
+      <MemberSignature Language="C#" Value="public string SID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SID" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.UserIdType.SID" />
+      <MemberSignature Language="VB.NET" Value="Public Property SID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.UserIdType.SID" /> (propiedad) Obtiene o establece el formato de idioma (SSDL) de definición de descriptor de seguridad del identificador de seguridad (SID).</summary>
+        <value>El <see cref="P:ExchangeWebServices.UserIdType.SID" /> (propiedad) devuelve una cadena que contiene el SID.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

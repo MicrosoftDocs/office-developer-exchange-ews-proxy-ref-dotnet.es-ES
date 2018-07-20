@@ -1,0 +1,137 @@
+<Type Name="BaseObjectChangedEventType" FullName="ExchangeWebServices.BaseObjectChangedEventType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="199ffb5587dfea2176d150b377d0df4c817c1fc0" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20611898" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class BaseObjectChangedEventType : ExchangeWebServices.BaseNotificationEventType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit BaseObjectChangedEventType extends ExchangeWebServices.BaseNotificationEventType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.BaseObjectChangedEventType" />
+  <TypeSignature Language="VB.NET" Value="Public Class BaseObjectChangedEventType&#xA;Inherits BaseNotificationEventType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BaseObjectChangedEventType : ExchangeWebServices::BaseNotificationEventType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseNotificationEventType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.MovedCopiedEventType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.ModifiedEventType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>El <see cref="T:ExchangeWebServices.BaseObjectChangedEventType" /> clase representa crea, eliminar y nuevos eventos de correo.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BaseObjectChangedEventType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.BaseObjectChangedEventType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BaseObjectChangedEventType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>El <see cref="T:ExchangeWebServices.BaseObjectChangedEventType" /> constructor inicializa una nueva instancia de la <see cref="T:ExchangeWebServices.BaseObjectChangedEventType" /> clase.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object Item { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BaseObjectChangedEventType.Item" />
+      <MemberSignature Language="VB.NET" Value="Public Property Item As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Item { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("FolderId", typeof(ExchangeWebServices.FolderIdType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("ItemId", typeof(ExchangeWebServices.ItemIdType))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.Item" /> (propiedad) Obtiene un <see cref="T:ExchangeWebServices.FolderIdType" /> o un <see cref="T:ExchangeWebServices.ItemIdType" /> objeto que identifica el elemento del almacén modificado.</summary>
+        <value>El <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.Item" /> (propiedad) devuelve un objeto object que representa un <see cref="T:ExchangeWebServices.FolderIdType" /> o un <see cref="T:ExchangeWebServices.ItemIdType" /> objeto.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentFolderId">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.FolderIdType ParentFolderId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.FolderIdType ParentFolderId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BaseObjectChangedEventType.ParentFolderId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParentFolderId As FolderIdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::FolderIdType ^ ParentFolderId { ExchangeWebServices::FolderIdType ^ get(); void set(ExchangeWebServices::FolderIdType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.FolderIdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.ParentFolderId" /> (propiedad) Obtiene el elemento primario de identificador de la carpeta de la carpeta o el elemento modificado.</summary>
+        <value>El <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.ParentFolderId" /> (propiedad) devuelve un <see cref="T:ExchangeWebServices.FolderIdType" /> objeto que identifica la carpeta principal del elemento cambiado.</value>
+        <remarks>
+          <para>Esta propiedad es de sólo lectura, debido a que sólo se devuelve en una respuesta. Set (propiedad) en la firma de la propiedad es un artefacto del generador de proxy.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeStamp">
+      <MemberSignature Language="C#" Value="public DateTime TimeStamp { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime TimeStamp" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BaseObjectChangedEventType.TimeStamp" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimeStamp As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime TimeStamp { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.TimeStamp" /> (propiedad) Obtiene la marca de tiempo de un evento de buzón de correo de carpeta o elemento modificado.</summary>
+        <value>El <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.TimeStamp" /> (propiedad) devuelve un objeto DateTime que representa la marca de tiempo de un evento de buzón de correo de carpeta o elemento modificado.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
