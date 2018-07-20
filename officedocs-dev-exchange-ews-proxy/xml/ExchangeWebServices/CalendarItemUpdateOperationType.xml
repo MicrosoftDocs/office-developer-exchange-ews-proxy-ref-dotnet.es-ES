@@ -1,0 +1,172 @@
+<Type Name="CalendarItemUpdateOperationType" FullName="ExchangeWebServices.CalendarItemUpdateOperationType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="335caf71f53789d1a09db51d23553d044f11d449" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20612690" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum CalendarItemUpdateOperationType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CalendarItemUpdateOperationType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.CalendarItemUpdateOperationType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CalendarItemUpdateOperationType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CalendarItemUpdateOperationType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="bdf46-101">El <see cref="T:ExchangeWebServices.CalendarItemUpdateOperationType" /> (enumeración) especifica cómo se comunican las actualizaciones de la reunión después de actualiza un elemento de calendario.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="bdf46-101">The <see cref="T:ExchangeWebServices.CalendarItemUpdateOperationType" /> enumeration specifies how meeting updates are communicated after a calendar item is updated.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="bdf46-102">
+        <para>Esta enumeración se usa en el <see cref="P:ExchangeWebServices.UpdateItemType.SendMeetingInvitationsOrCancellations" /> (propiedad) de la <see cref="T:ExchangeWebServices.UpdateItemType" /> objeto.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="bdf46-102">
+          <para>This enumeration is used by the <see cref="P:ExchangeWebServices.UpdateItemType.SendMeetingInvitationsOrCancellations" /> property of the <see cref="T:ExchangeWebServices.UpdateItemType" /> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SendOnlyToAll">
+      <MemberSignature Language="C#" Value="SendOnlyToAll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.CalendarItemUpdateOperationType SendOnlyToAll = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.CalendarItemUpdateOperationType.SendOnlyToAll" />
+      <MemberSignature Language="VB.NET" Value="SendOnlyToAll" />
+      <MemberSignature Language="C++ CLI" Value="SendOnlyToAll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemUpdateOperationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bdf46-103">El elemento de calendario se actualiza y se envía a todos los asistentes de la actualización de la reunión pero no se guarda en la carpeta que se identifica con el <see cref="P:ExchangeWebServices.UpdateItemType.SavedItemFolderId" /> (propiedad).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bdf46-103">The calendar item is updated and the meeting update is sent to all attendees but is not saved in the folder that is identified by the <see cref="P:ExchangeWebServices.UpdateItemType.SavedItemFolderId" /> property.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SendOnlyToChanged">
+      <MemberSignature Language="C#" Value="SendOnlyToChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.CalendarItemUpdateOperationType SendOnlyToChanged = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.CalendarItemUpdateOperationType.SendOnlyToChanged" />
+      <MemberSignature Language="VB.NET" Value="SendOnlyToChanged" />
+      <MemberSignature Language="C++ CLI" Value="SendOnlyToChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemUpdateOperationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bdf46-104">Se actualiza el elemento de calendario y la actualización de la reunión sólo se envía a los asistentes que se ven afectados por el cambio en la reunión.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bdf46-104">The calendar item is updated and the meeting update is sent only to attendees that are affected by the change in the meeting.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SendToAllAndSaveCopy">
+      <MemberSignature Language="C#" Value="SendToAllAndSaveCopy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.CalendarItemUpdateOperationType SendToAllAndSaveCopy = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.CalendarItemUpdateOperationType.SendToAllAndSaveCopy" />
+      <MemberSignature Language="VB.NET" Value="SendToAllAndSaveCopy" />
+      <MemberSignature Language="C++ CLI" Value="SendToAllAndSaveCopy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemUpdateOperationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bdf46-105">Se actualiza el elemento de calendario, la actualización de la reunión se envía a todos los asistentes y se guarda una copia en la carpeta que se identifica con el <see cref="P:ExchangeWebServices.UpdateItemType.SavedItemFolderId" /> (propiedad).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bdf46-105">The calendar item is updated, the meeting update is sent to all attendees, and a copy is saved in the folder that is identified by the <see cref="P:ExchangeWebServices.UpdateItemType.SavedItemFolderId" /> property.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SendToChangedAndSaveCopy">
+      <MemberSignature Language="C#" Value="SendToChangedAndSaveCopy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.CalendarItemUpdateOperationType SendToChangedAndSaveCopy = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.CalendarItemUpdateOperationType.SendToChangedAndSaveCopy" />
+      <MemberSignature Language="VB.NET" Value="SendToChangedAndSaveCopy" />
+      <MemberSignature Language="C++ CLI" Value="SendToChangedAndSaveCopy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemUpdateOperationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bdf46-106">Se actualiza el elemento de calendario, la actualización de la reunión se envía a todos los asistentes que se ven afectados por el cambio de la reunión y se guarda una copia en la carpeta que se identifica con el <see cref="P:ExchangeWebServices.UpdateItemType.SavedItemFolderId" /> (propiedad).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bdf46-106">The calendar item is updated, the meeting update is sent to all attendees that are affected by the change in the meeting, and a copy is saved in the folder that is identified by the <see cref="P:ExchangeWebServices.UpdateItemType.SavedItemFolderId" /> property.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SendToNone">
+      <MemberSignature Language="C#" Value="SendToNone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.CalendarItemUpdateOperationType SendToNone = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.CalendarItemUpdateOperationType.SendToNone" />
+      <MemberSignature Language="VB.NET" Value="SendToNone" />
+      <MemberSignature Language="C++ CLI" Value="SendToNone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemUpdateOperationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bdf46-107">El elemento de calendario se actualiza pero no se envían las actualizaciones a los asistentes.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bdf46-107">The calendar item is updated but updates are not sent to attendees.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

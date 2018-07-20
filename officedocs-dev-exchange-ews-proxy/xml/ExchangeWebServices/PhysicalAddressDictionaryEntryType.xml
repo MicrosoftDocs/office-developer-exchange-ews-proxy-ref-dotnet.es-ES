@@ -1,0 +1,255 @@
+<Type Name="PhysicalAddressDictionaryEntryType" FullName="ExchangeWebServices.PhysicalAddressDictionaryEntryType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="8c4066aa60688505548b8b89c6cae5b7194c5405" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20613343" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class PhysicalAddressDictionaryEntryType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PhysicalAddressDictionaryEntryType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.PhysicalAddressDictionaryEntryType" />
+  <TypeSignature Language="VB.NET" Value="Public Class PhysicalAddressDictionaryEntryType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PhysicalAddressDictionaryEntryType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="d8754-101">El <see cref="T:ExchangeWebServices.PhysicalAddressDictionaryEntryType" /> clase contiene la información que define una dirección física, como una dirección postal.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="d8754-101">The <see cref="T:ExchangeWebServices.PhysicalAddressDictionaryEntryType" /> class contains information that defines a physical address, such as a street address.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PhysicalAddressDictionaryEntryType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.PhysicalAddressDictionaryEntryType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PhysicalAddressDictionaryEntryType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="d8754-102">El <see cref="T:ExchangeWebServices.PhysicalAddressDictionaryEntryType" /> constructor inicializa una nueva instancia de la <see cref="T:ExchangeWebServices.PhysicalAddressDictionaryEntryType" /> clase.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d8754-102">The <see cref="T:ExchangeWebServices.PhysicalAddressDictionaryEntryType" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.PhysicalAddressDictionaryEntryType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="City">
+      <MemberSignature Language="C#" Value="public string City { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string City" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.City" />
+      <MemberSignature Language="VB.NET" Value="Public Property City As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ City { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d8754-103">El <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.City" /> (propiedad) Obtiene o establece el nombre de la ciudad para un elemento de contacto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d8754-103">The <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.City" /> property gets or sets the city name for a contact item.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d8754-104">El <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.City" /> (propiedad) devuelve una cadena que contiene el nombre de la ciudad que está asociado con un contacto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d8754-104">The <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.City" /> property returns a string that contains the city name that is associated with a contact.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CountryOrRegion">
+      <MemberSignature Language="C#" Value="public string CountryOrRegion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CountryOrRegion" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.CountryOrRegion" />
+      <MemberSignature Language="VB.NET" Value="Public Property CountryOrRegion As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CountryOrRegion { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d8754-105">El <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.CountryOrRegion" /> (propiedad) Obtiene o establece el país o la región para un elemento de contacto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d8754-105">The <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.CountryOrRegion" /> property gets or sets the country or region for a contact item.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d8754-106">El <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.CountryOrRegion" /> (propiedad) devuelve una cadena que contiene el país o la región para una dirección física.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d8754-106">The <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.CountryOrRegion" /> property returns a string that contains the country or region for a physical address.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Key">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.PhysicalAddressKeyType Key { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.PhysicalAddressKeyType Key" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.Key" />
+      <MemberSignature Language="VB.NET" Value="Public Property Key As PhysicalAddressKeyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::PhysicalAddressKeyType Key { ExchangeWebServices::PhysicalAddressKeyType get(); void set(ExchangeWebServices::PhysicalAddressKeyType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.PhysicalAddressKeyType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d8754-107">El <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.Key" /> (propiedad) Obtiene o establece el tipo de dirección física de la dirección de un contacto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d8754-107">The <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.Key" /> property gets or sets the type of physical address for a contact's address.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d8754-108">El <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.Key" /> (propiedad) devuelve uno de los <see cref="T:ExchangeWebServices.PhysicalAddressKeyType" /> valores de enumeración.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d8754-108">The <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.Key" /> property returns one of the <see cref="T:ExchangeWebServices.PhysicalAddressKeyType" /> enumeration values.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostalCode">
+      <MemberSignature Language="C#" Value="public string PostalCode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PostalCode" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.PostalCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property PostalCode As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PostalCode { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d8754-109">El <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.PostalCode" /> (propiedad) Obtiene o establece el código postal para un elemento de contacto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d8754-109">The <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.PostalCode" /> property gets or sets the postal code for a contact item.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d8754-110">El <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.PostalCode" /> (propiedad) devuelve una cadena que contiene el código postal para un elemento de contacto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d8754-110">The <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.PostalCode" /> property returns a string that contains the postal code for a contact item.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public string State { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string State" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.State" />
+      <MemberSignature Language="VB.NET" Value="Public Property State As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ State { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d8754-111">El <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.State" /> (propiedad) Obtiene o establece el estado para un elemento de contacto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d8754-111">The <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.State" /> property gets or sets the state for a contact item.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d8754-112">El <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.State" /> (propiedad) devuelve una cadena que contiene el estado de un elemento de contacto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d8754-112">The <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.State" /> property returns a string that contains the state for a contact item.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Street">
+      <MemberSignature Language="C#" Value="public string Street { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Street" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.Street" />
+      <MemberSignature Language="VB.NET" Value="Public Property Street As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Street { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d8754-113">El <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.Street" /> (propiedad) Obtiene o establece la dirección postal de un elemento de contacto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d8754-113">The <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.Street" /> property gets or sets the street address for a contact item.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d8754-114">El <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.Street" /> (propiedad) devuelve una cadena que contiene la dirección postal de un elemento de contacto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d8754-114">The <see cref="P:ExchangeWebServices.PhysicalAddressDictionaryEntryType.Street" /> property returns a string that contains the street address for a contact item.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

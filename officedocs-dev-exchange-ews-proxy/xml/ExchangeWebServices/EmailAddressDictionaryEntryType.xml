@@ -1,0 +1,284 @@
+<Type Name="EmailAddressDictionaryEntryType" FullName="ExchangeWebServices.EmailAddressDictionaryEntryType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="9a3c791b01e7db5315eb6ac0ea6b0f0ec23bfacc" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20612620" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class EmailAddressDictionaryEntryType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit EmailAddressDictionaryEntryType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.EmailAddressDictionaryEntryType" />
+  <TypeSignature Language="VB.NET" Value="Public Class EmailAddressDictionaryEntryType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EmailAddressDictionaryEntryType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="d0292-101">El <see cref="T:ExchangeWebServices.EmailAddressDictionaryEntryType" /> clase representa una dirección de correo electrónico que está asociada con un contacto.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="d0292-101">The <see cref="T:ExchangeWebServices.EmailAddressDictionaryEntryType" /> class represents an e-mail address that is associated with a contact.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EmailAddressDictionaryEntryType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.EmailAddressDictionaryEntryType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EmailAddressDictionaryEntryType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="d0292-102">El <see cref="M:ExchangeWebServices.EmailAddressDictionaryEntryType.#ctor" /> constructor inicializa una nueva instancia de la <see cref="T:ExchangeWebServices.EmailAddressDictionaryEntryType" /> clase.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d0292-102">The <see cref="M:ExchangeWebServices.EmailAddressDictionaryEntryType.#ctor" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.EmailAddressDictionaryEntryType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Key">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.EmailAddressKeyType Key { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.EmailAddressKeyType Key" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EmailAddressDictionaryEntryType.Key" />
+      <MemberSignature Language="VB.NET" Value="Public Property Key As EmailAddressKeyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::EmailAddressKeyType Key { ExchangeWebServices::EmailAddressKeyType get(); void set(ExchangeWebServices::EmailAddressKeyType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.EmailAddressKeyType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d0292-103">El <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.Key" /> (propiedad) Obtiene o establece una de las válido <see cref="T:ExchangeWebServices.EmailAddressKeyType" /> valores de enumeración que identifican una dirección de correo electrónico que está asociada con un contacto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d0292-103">The <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.Key" /> property gets or sets one of the valid <see cref="T:ExchangeWebServices.EmailAddressKeyType" /> enumeration values that identify an e-mail address that is associated with a contact.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d0292-104">El <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.Key" /> (propiedad) devuelve uno de los válido <see cref="T:ExchangeWebServices.EmailAddressKeyType" /> valores de enumeración.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d0292-104">The <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.Key" /> property returns one of the valid <see cref="T:ExchangeWebServices.EmailAddressKeyType" /> enumeration values.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MailboxType">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.MailboxTypeType MailboxType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.MailboxTypeType MailboxType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EmailAddressDictionaryEntryType.MailboxType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MailboxType As MailboxTypeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::MailboxTypeType MailboxType { ExchangeWebServices::MailboxTypeType get(); void set(ExchangeWebServices::MailboxTypeType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.MailboxTypeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d0292-105">El <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.MailboxType" /> (propiedad) Obtiene o establece una instancia de la <see cref="T:ExchangeWebServices.MailboxTypeType" /> clase que especifica el tipo de buzón de correo que está representada por esta instancia de la <see cref="T:ExchangeWebServices.EmailAddressDictionaryEntryType" /> clase.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d0292-105">The <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.MailboxType" /> property gets or sets an instance of the <see cref="T:ExchangeWebServices.MailboxTypeType" /> class that specifies the type of mailbox that is represented by this instance of the <see cref="T:ExchangeWebServices.EmailAddressDictionaryEntryType" /> class.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d0292-106">El valor de la <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.MailboxType" /> propiedad es una <see cref="T:ExchangeWebServices.MailboxTypeType" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d0292-106">The value of the <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.MailboxType" /> property is a <see cref="T:ExchangeWebServices.MailboxTypeType" /> object.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MailboxTypeSpecified">
+      <MemberSignature Language="C#" Value="public bool MailboxTypeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MailboxTypeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EmailAddressDictionaryEntryType.MailboxTypeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MailboxTypeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MailboxTypeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d0292-107">El <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.MailboxTypeSpecified" /> propiedad obtiene un valor booleano que especifica si el <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.MailboxType" /> (propiedad) se serializa en la solicitud SOAP.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d0292-107">The <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.MailboxTypeSpecified" /> property gets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.MailboxType" /> property is serialized into the SOAP request.</span>
+          </span>
+          <span data-ttu-id="d0292-108">Esta propiedad es obligatoria si la <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.MailboxType" /> se especifica la propiedad.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d0292-108">This property is required if the <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.MailboxType" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d0292-109">El valor de la <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.MailboxTypeSpecified" /> propiedad es <b>true</b> si el <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.MailboxType" /> (propiedad) se serializa en la solicitud SOAP; de lo contrario, el valor es <b>false</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d0292-109">The value of the <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.MailboxTypeSpecified" /> property is <b>true</b> if the <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.MailboxType" /> property is serialized into the SOAP request; otherwise, the value is <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EmailAddressDictionaryEntryType.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d0292-110">El <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.Name" /> (propiedad) Obtiene o establece un valor de tipo string que especifica el nombre del buzón.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d0292-110">The <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.Name" /> property gets or sets a string value that specifies the name of the mailbox.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d0292-111">El valor de la <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.Name" /> propiedad es una cadena que contiene el nombre asociado con el buzón de correo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d0292-111">The value of the <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.Name" /> property is a string that contains the name associated with the mailbox.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoutingType">
+      <MemberSignature Language="C#" Value="public string RoutingType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RoutingType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EmailAddressDictionaryEntryType.RoutingType" />
+      <MemberSignature Language="VB.NET" Value="Public Property RoutingType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RoutingType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d0292-112">El <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.RoutingType" /> (propiedad) Obtiene o establece un valor de tipo string que especifica el tipo de enrutamiento para la dirección de correo electrónico.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d0292-112">The <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.RoutingType" /> property gets or sets a string that specifies the type of routing for the e-mail address.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d0292-113">El valor de la <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.RoutingType" /> propiedad es una cadena que especifica el tipo de enrutamiento para la dirección de correo electrónico.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d0292-113">The value of the <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.RoutingType" /> property is a string that specifies the type of routing for the e-mail address.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EmailAddressDictionaryEntryType.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlText</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d0292-114">El <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.Value" /> propiedad contiene un valor de tipo string que representa la dirección de correo electrónico que está asociada con un contacto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d0292-114">The <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.Value" /> property contains a string value that represents the e-mail address that is associated with a contact.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d0292-115">El <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.Value" /> (propiedad) devuelve un valor de tipo string.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d0292-115">The <see cref="P:ExchangeWebServices.EmailAddressDictionaryEntryType.Value" /> property returns a string value.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
